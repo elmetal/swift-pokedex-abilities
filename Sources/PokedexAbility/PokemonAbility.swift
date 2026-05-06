@@ -13,17 +13,3 @@ public struct PokemonAbility: Hashable, Codable, Sendable, RawRepresentable {
         self.rawValue = rawValue
     }
 }
-
-public extension PokemonAbility {
-    struct Name: Hashable, Sendable {
-        let ability: PokemonAbility
-
-        init(ability: PokemonAbility) {
-            self.ability = ability
-        }
-    }
-
-    var name: Name {
-        Name(ability: self)
-    }
-}
