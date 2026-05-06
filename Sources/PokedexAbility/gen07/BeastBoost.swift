@@ -1,0 +1,37 @@
+//
+//  BeastBoost.swift
+//  PokedexAbility
+//
+//  Created by elmetal on 2026/05/06
+//
+//
+
+import Foundation
+
+public extension PokemonAbility {
+    static let beastBoost = BeastBoost.ability
+}
+
+enum BeastBoost: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "beast-boost")
+
+    static func name(locale: Locale) -> String {
+        switch locale.language.languageCode {
+        case .japanese:
+            "ビーストブースト"
+        default:
+            "Beast Boost"
+        }
+    }
+
+    static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
+        switch (generation, locale.language.languageCode) {
+        case (.vii, .japanese):
+            "相手を倒した時、自分の最も高い能力が1段階上がる。"
+        case (.vii, _):
+            "When the Pokémon knocks out another Pokémon, its highest stat rises by one stage."
+        default:
+            name(locale: locale)
+        }
+    }
+}
