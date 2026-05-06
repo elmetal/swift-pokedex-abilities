@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as トレース in Japanese.
+    ///
+    /// The localized name of this ability is `"Trace"` in English and
+    /// `"トレース"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Trace by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.trace
+    /// ```
+    ///
+    /// The ability's raw value is `"trace"`.
     static let trace = Trace.ability
 }
 

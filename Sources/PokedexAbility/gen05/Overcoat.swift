@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ぼうじん in Japanese.
+    ///
+    /// The localized name of this ability is `"Overcoat"` in English and
+    /// `"ぼうじん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Overcoat by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.overcoat
+    /// ```
+    ///
+    /// The ability's raw value is `"overcoat"`.
     static let overcoat = Overcoat.ability
 }
 

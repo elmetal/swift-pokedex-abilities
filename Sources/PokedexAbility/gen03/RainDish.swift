@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as あめうけざら in Japanese.
+    ///
+    /// The localized name of this ability is `"Rain Dish"` in English and
+    /// `"あめうけざら"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Rain Dish by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.rainDish
+    /// ```
+    ///
+    /// The ability's raw value is `"rain-dish"`.
     static let rainDish = RainDish.ability
 }
 

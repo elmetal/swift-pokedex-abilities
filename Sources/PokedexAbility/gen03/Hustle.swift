@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as はりきり in Japanese.
+    ///
+    /// The localized name of this ability is `"Hustle"` in English and
+    /// `"はりきり"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Hustle by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.hustle
+    /// ```
+    ///
+    /// The ability's raw value is `"hustle"`.
     static let hustle = Hustle.ability
 }
 

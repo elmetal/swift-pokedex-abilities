@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as きもったま in Japanese.
+    ///
+    /// The localized name of this ability is `"Scrappy"` in English and
+    /// `"きもったま"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Scrappy by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.scrappy
+    /// ```
+    ///
+    /// The ability's raw value is `"scrappy"`.
     static let scrappy = Scrappy.ability
 }
 

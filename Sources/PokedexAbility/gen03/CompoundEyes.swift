@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ふくがん in Japanese.
+    ///
+    /// The localized name of this ability is `"Compound Eyes"` in English and
+    /// `"ふくがん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Compound Eyes by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.compoundEyes
+    /// ```
+    ///
+    /// The ability's raw value is `"compound-eyes"`.
     static let compoundEyes = CompoundEyes.ability
 }
 

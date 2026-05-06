@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ムラっけ in Japanese.
+    ///
+    /// The localized name of this ability is `"Moody"` in English and
+    /// `"ムラっけ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Moody by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.moody
+    /// ```
+    ///
+    /// The ability's raw value is `"moody"`.
     static let moody = Moody.ability
 }
 

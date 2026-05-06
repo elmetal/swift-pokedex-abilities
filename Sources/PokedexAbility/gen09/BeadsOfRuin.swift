@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as わざわいのたま in Japanese.
+    ///
+    /// The localized name of this ability is `"Beads of Ruin"` in English and
+    /// `"わざわいのたま"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Beads of Ruin by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.beadsOfRuin
+    /// ```
+    ///
+    /// The ability's raw value is `"beads-of-ruin"`.
     static let beadsOfRuin = BeadsOfRuin.ability
 }
 

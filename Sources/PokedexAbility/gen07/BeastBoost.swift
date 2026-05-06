@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ビーストブースト in Japanese.
+    ///
+    /// The localized name of this ability is `"Beast Boost"` in English and
+    /// `"ビーストブースト"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Beast Boost by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.beastBoost
+    /// ```
+    ///
+    /// The ability's raw value is `"beast-boost"`.
     static let beastBoost = BeastBoost.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as すなはき in Japanese.
+    ///
+    /// The localized name of this ability is `"Sand Spit"` in English and
+    /// `"すなはき"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Sand Spit by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.sandSpit
+    /// ```
+    ///
+    /// The ability's raw value is `"sand-spit"`.
     static let sandSpit = SandSpit.ability
 }
 

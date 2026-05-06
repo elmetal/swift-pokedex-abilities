@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as じゅくせい in Japanese.
+    ///
+    /// The localized name of this ability is `"Ripen"` in English and
+    /// `"じゅくせい"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Ripen by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.ripen
+    /// ```
+    ///
+    /// The ability's raw value is `"ripen"`.
     static let ripen = Ripen.ability
 }
 

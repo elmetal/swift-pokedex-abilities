@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as てつのこぶし in Japanese.
+    ///
+    /// The localized name of this ability is `"Iron Fist"` in English and
+    /// `"てつのこぶし"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Iron Fist by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.ironFist
+    /// ```
+    ///
+    /// The ability's raw value is `"iron-fist"`.
     static let ironFist = IronFist.ability
 }
 

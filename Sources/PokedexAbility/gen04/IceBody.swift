@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as アイスボディ in Japanese.
+    ///
+    /// The localized name of this ability is `"Ice Body"` in English and
+    /// `"アイスボディ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Ice Body by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.iceBody
+    /// ```
+    ///
+    /// The ability's raw value is `"ice-body"`.
     static let iceBody = IceBody.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ブレインフォース in Japanese.
+    ///
+    /// The localized name of this ability is `"Neuroforce"` in English and
+    /// `"ブレインフォース"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Neuroforce by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.neuroforce
+    /// ```
+    ///
+    /// The ability's raw value is `"neuroforce"`.
     static let neuroforce = Neuroforce.ability
 }
 

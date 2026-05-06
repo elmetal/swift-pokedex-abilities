@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as マルチタイプ in Japanese.
+    ///
+    /// The localized name of this ability is `"Multitype"` in English and
+    /// `"マルチタイプ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Multitype by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.multitype
+    /// ```
+    ///
+    /// The ability's raw value is `"multitype"`.
     static let multitype = Multitype.ability
 }
 

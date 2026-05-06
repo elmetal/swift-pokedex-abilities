@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ゆきかき in Japanese.
+    ///
+    /// The localized name of this ability is `"Slush Rush"` in English and
+    /// `"ゆきかき"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Slush Rush by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.slushRush
+    /// ```
+    ///
+    /// The ability's raw value is `"slush-rush"`.
     static let slushRush = SlushRush.ability
 }
 

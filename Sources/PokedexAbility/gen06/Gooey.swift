@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ぬめぬめ in Japanese.
+    ///
+    /// The localized name of this ability is `"Gooey"` in English and
+    /// `"ぬめぬめ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Gooey by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.gooey
+    /// ```
+    ///
+    /// The ability's raw value is `"gooey"`.
     static let gooey = Gooey.ability
 }
 

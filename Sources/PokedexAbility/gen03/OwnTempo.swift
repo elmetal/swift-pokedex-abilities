@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as マイペース in Japanese.
+    ///
+    /// The localized name of this ability is `"Own Tempo"` in English and
+    /// `"マイペース"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Own Tempo by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.ownTempo
+    /// ```
+    ///
+    /// The ability's raw value is `"own-tempo"`.
     static let ownTempo = OwnTempo.ability
 }
 

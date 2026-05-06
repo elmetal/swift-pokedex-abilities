@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as すてみ in Japanese.
+    ///
+    /// The localized name of this ability is `"Reckless"` in English and
+    /// `"すてみ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Reckless by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.reckless
+    /// ```
+    ///
+    /// The ability's raw value is `"reckless"`.
     static let reckless = Reckless.ability
 }
 

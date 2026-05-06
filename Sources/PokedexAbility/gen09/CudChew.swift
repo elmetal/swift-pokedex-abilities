@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as はんすう in Japanese.
+    ///
+    /// The localized name of this ability is `"Cud Chew"` in English and
+    /// `"はんすう"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Cud Chew by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.cudChew
+    /// ```
+    ///
+    /// The ability's raw value is `"cud-chew"`.
     static let cudChew = CudChew.ability
 }
 

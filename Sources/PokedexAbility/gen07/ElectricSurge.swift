@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as エレキメイカー in Japanese.
+    ///
+    /// The localized name of this ability is `"Electric Surge"` in English and
+    /// `"エレキメイカー"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Electric Surge by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.electricSurge
+    /// ```
+    ///
+    /// The ability's raw value is `"electric-surge"`.
     static let electricSurge = ElectricSurge.ability
 }
 

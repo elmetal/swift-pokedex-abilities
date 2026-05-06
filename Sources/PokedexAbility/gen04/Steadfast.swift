@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ふくつのこころ in Japanese.
+    ///
+    /// The localized name of this ability is `"Steadfast"` in English and
+    /// `"ふくつのこころ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Steadfast by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.steadfast
+    /// ```
+    ///
+    /// The ability's raw value is `"steadfast"`.
     static let steadfast = Steadfast.ability
 }
 

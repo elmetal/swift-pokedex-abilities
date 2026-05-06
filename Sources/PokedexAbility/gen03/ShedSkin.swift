@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as だっぴ in Japanese.
+    ///
+    /// The localized name of this ability is `"Shed Skin"` in English and
+    /// `"だっぴ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Shed Skin by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.shedSkin
+    /// ```
+    ///
+    /// The ability's raw value is `"shed-skin"`.
     static let shedSkin = ShedSkin.ability
 }
 

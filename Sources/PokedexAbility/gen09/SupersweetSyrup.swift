@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as かんろなミツ in Japanese.
+    ///
+    /// The localized name of this ability is `"Supersweet Syrup"` in English and
+    /// `"かんろなミツ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Supersweet Syrup by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.supersweetSyrup
+    /// ```
+    ///
+    /// The ability's raw value is `"supersweet-syrup"`.
     static let supersweetSyrup = SupersweetSyrup.ability
 }
 

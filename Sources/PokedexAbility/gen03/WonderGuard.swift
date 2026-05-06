@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ふしぎなまもり in Japanese.
+    ///
+    /// The localized name of this ability is `"Wonder Guard"` in English and
+    /// `"ふしぎなまもり"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Wonder Guard by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.wonderGuard
+    /// ```
+    ///
+    /// The ability's raw value is `"wonder-guard"`.
     static let wonderGuard = WonderGuard.ability
 }
 

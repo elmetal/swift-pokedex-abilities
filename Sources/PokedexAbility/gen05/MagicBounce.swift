@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as マジックミラー in Japanese.
+    ///
+    /// The localized name of this ability is `"Magic Bounce"` in English and
+    /// `"マジックミラー"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Magic Bounce by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.magicBounce
+    /// ```
+    ///
+    /// The ability's raw value is `"magic-bounce"`.
     static let magicBounce = MagicBounce.ability
 }
 

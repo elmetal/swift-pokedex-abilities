@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as たまひろい in Japanese.
+    ///
+    /// The localized name of this ability is `"Ball Fetch"` in English and
+    /// `"たまひろい"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Ball Fetch by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.ballFetch
+    /// ```
+    ///
+    /// The ability's raw value is `"ball-fetch"`.
     static let ballFetch = BallFetch.ability
 }
 

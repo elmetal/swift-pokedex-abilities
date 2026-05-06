@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as シンクロ in Japanese.
+    ///
+    /// The localized name of this ability is `"Synchronize"` in English and
+    /// `"シンクロ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Synchronize by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.synchronize
+    /// ```
+    ///
+    /// The ability's raw value is `"synchronize"`.
     static let synchronize = Synchronize.ability
 }
 

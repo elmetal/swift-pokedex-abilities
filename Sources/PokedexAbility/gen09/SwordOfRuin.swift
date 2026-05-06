@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as わざわいのつるぎ in Japanese.
+    ///
+    /// The localized name of this ability is `"Sword of Ruin"` in English and
+    /// `"わざわいのつるぎ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Sword of Ruin by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.swordOfRuin
+    /// ```
+    ///
+    /// The ability's raw value is `"sword-of-ruin"`.
     static let swordOfRuin = SwordOfRuin.ability
 }
 

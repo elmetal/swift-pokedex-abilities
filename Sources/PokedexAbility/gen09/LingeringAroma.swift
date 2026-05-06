@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as とれないにおい in Japanese.
+    ///
+    /// The localized name of this ability is `"Lingering Aroma"` in English and
+    /// `"とれないにおい"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Lingering Aroma by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.lingeringAroma
+    /// ```
+    ///
+    /// The ability's raw value is `"lingering-aroma"`.
     static let lingeringAroma = LingeringAroma.ability
 }
 

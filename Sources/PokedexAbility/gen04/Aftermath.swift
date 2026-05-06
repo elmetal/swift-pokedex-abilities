@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ゆうばく in Japanese.
+    ///
+    /// The localized name of this ability is `"Aftermath"` in English and
+    /// `"ゆうばく"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Aftermath by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.aftermath
+    /// ```
+    ///
+    /// The ability's raw value is `"aftermath"`.
     static let aftermath = Aftermath.ability
 }
 

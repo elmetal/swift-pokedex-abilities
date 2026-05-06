@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as テラスシェル in Japanese.
+    ///
+    /// The localized name of this ability is `"Tera Shell"` in English and
+    /// `"テラスシェル"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Tera Shell by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.teraShell
+    /// ```
+    ///
+    /// The ability's raw value is `"tera-shell"`.
     static let teraShell = TeraShell.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as スキルリンク in Japanese.
+    ///
+    /// The localized name of this ability is `"Skill Link"` in English and
+    /// `"スキルリンク"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Skill Link by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.skillLink
+    /// ```
+    ///
+    /// The ability's raw value is `"skill-link"`.
     static let skillLink = SkillLink.ability
 }
 

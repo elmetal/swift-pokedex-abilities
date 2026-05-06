@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as カーリーヘアー in Japanese.
+    ///
+    /// The localized name of this ability is `"Tangling Hair"` in English and
+    /// `"カーリーヘアー"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Tangling Hair by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.tanglingHair
+    /// ```
+    ///
+    /// The ability's raw value is `"tangling-hair"`.
     static let tanglingHair = TanglingHair.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as とびだすなかみ in Japanese.
+    ///
+    /// The localized name of this ability is `"Innards Out"` in English and
+    /// `"とびだすなかみ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Innards Out by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.innardsOut
+    /// ```
+    ///
+    /// The ability's raw value is `"innards-out"`.
     static let innardsOut = InnardsOut.ability
 }
 

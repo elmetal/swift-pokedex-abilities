@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as じゅうなん in Japanese.
+    ///
+    /// The localized name of this ability is `"Limber"` in English and
+    /// `"じゅうなん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Limber by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.limber
+    /// ```
+    ///
+    /// The ability's raw value is `"limber"`.
     static let limber = Limber.ability
 }
 

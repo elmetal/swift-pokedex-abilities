@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as バリアフリー in Japanese.
+    ///
+    /// The localized name of this ability is `"Screen Cleaner"` in English and
+    /// `"バリアフリー"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Screen Cleaner by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.screenCleaner
+    /// ```
+    ///
+    /// The ability's raw value is `"screen-cleaner"`.
     static let screenCleaner = ScreenCleaner.ability
 }
 

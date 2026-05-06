@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as はっこう in Japanese.
+    ///
+    /// The localized name of this ability is `"Illuminate"` in English and
+    /// `"はっこう"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Illuminate by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.illuminate
+    /// ```
+    ///
+    /// The ability's raw value is `"illuminate"`.
     static let illuminate = Illuminate.ability
 }
 

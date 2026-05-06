@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as おやこあい in Japanese.
+    ///
+    /// The localized name of this ability is `"Parental Bond"` in English and
+    /// `"おやこあい"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Parental Bond by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.parentalBond
+    /// ```
+    ///
+    /// The ability's raw value is `"parental-bond"`.
     static let parentalBond = ParentalBond.ability
 }
 

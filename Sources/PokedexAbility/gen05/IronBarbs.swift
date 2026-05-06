@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as てつのトゲ in Japanese.
+    ///
+    /// The localized name of this ability is `"Iron Barbs"` in English and
+    /// `"てつのトゲ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Iron Barbs by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.ironBarbs
+    /// ```
+    ///
+    /// The ability's raw value is `"iron-barbs"`.
     static let ironBarbs = IronBarbs.ability
 }
 

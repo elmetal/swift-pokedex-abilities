@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as メタルプロテクト in Japanese.
+    ///
+    /// The localized name of this ability is `"Full Metal Body"` in English and
+    /// `"メタルプロテクト"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Full Metal Body by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.fullMetalBody
+    /// ```
+    ///
+    /// The ability's raw value is `"full-metal-body"`.
     static let fullMetalBody = FullMetalBody.ability
 }
 

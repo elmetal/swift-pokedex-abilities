@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as はりこみ in Japanese.
+    ///
+    /// The localized name of this ability is `"Stakeout"` in English and
+    /// `"はりこみ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Stakeout by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.stakeout
+    /// ```
+    ///
+    /// The ability's raw value is `"stakeout"`.
     static let stakeout = Stakeout.ability
 }
 

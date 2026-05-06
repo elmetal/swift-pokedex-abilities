@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as かたいツメ in Japanese.
+    ///
+    /// The localized name of this ability is `"Tough Claws"` in English and
+    /// `"かたいツメ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Tough Claws by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.toughClaws
+    /// ```
+    ///
+    /// The ability's raw value is `"tough-claws"`.
     static let toughClaws = ToughClaws.ability
 }
 

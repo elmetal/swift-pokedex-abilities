@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as パンクロック in Japanese.
+    ///
+    /// The localized name of this ability is `"Punk Rock"` in English and
+    /// `"パンクロック"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Punk Rock by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.punkRock
+    /// ```
+    ///
+    /// The ability's raw value is `"punk-rock"`.
     static let punkRock = PunkRock.ability
 }
 

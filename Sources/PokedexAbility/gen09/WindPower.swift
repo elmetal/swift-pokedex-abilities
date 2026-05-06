@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ふうりょくでんき in Japanese.
+    ///
+    /// The localized name of this ability is `"Wind Power"` in English and
+    /// `"ふうりょくでんき"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Wind Power by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.windPower
+    /// ```
+    ///
+    /// The ability's raw value is `"wind-power"`.
     static let windPower = WindPower.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as いわはこび in Japanese.
+    ///
+    /// The localized name of this ability is `"Rocky Payload"` in English and
+    /// `"いわはこび"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Rocky Payload by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.rockyPayload
+    /// ```
+    ///
+    /// The ability's raw value is `"rocky-payload"`.
     static let rockyPayload = RockyPayload.ability
 }
 

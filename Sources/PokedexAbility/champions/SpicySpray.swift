@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as とびだすハバネロ in Japanese.
+    ///
+    /// The localized name of this ability is `"Spicy Spray"` in English and
+    /// `"とびだすハバネロ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Spicy Spray by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.spicySpray
+    /// ```
+    ///
+    /// The ability's raw value is `"spicy-spray"`.
     static let spicySpray = SpicySpray.ability
 }
 

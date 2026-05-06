@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as テイルアーマー in Japanese.
+    ///
+    /// The localized name of this ability is `"Armor Tail"` in English and
+    /// `"テイルアーマー"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Armor Tail by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.armorTail
+    /// ```
+    ///
+    /// The ability's raw value is `"armor-tail"`.
     static let armorTail = ArmorTail.ability
 }
 

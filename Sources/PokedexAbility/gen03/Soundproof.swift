@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ぼうおん in Japanese.
+    ///
+    /// The localized name of this ability is `"Soundproof"` in English and
+    /// `"ぼうおん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Soundproof by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.soundproof
+    /// ```
+    ///
+    /// The ability's raw value is `"soundproof"`.
     static let soundproof = Soundproof.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ひとでなし in Japanese.
+    ///
+    /// The localized name of this ability is `"Merciless"` in English and
+    /// `"ひとでなし"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Merciless by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.merciless
+    /// ```
+    ///
+    /// The ability's raw value is `"merciless"`.
     static let merciless = Merciless.ability
 }
 

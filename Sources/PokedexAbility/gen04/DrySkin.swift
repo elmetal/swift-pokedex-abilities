@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as かんそうはだ in Japanese.
+    ///
+    /// The localized name of this ability is `"Dry Skin"` in English and
+    /// `"かんそうはだ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Dry Skin by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.drySkin
+    /// ```
+    ///
+    /// The ability's raw value is `"dry-skin"`.
     static let drySkin = DrySkin.ability
 }
 

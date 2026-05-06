@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as はらぺこスイッチ in Japanese.
+    ///
+    /// The localized name of this ability is `"Hunger Switch"` in English and
+    /// `"はらぺこスイッチ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Hunger Switch by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.hungerSwitch
+    /// ```
+    ///
+    /// The ability's raw value is `"hunger-switch"`.
     static let hungerSwitch = HungerSwitch.ability
 }
 

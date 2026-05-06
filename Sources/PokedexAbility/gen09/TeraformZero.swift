@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ゼロフォーミング in Japanese.
+    ///
+    /// The localized name of this ability is `"Teraform Zero"` in English and
+    /// `"ゼロフォーミング"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Teraform Zero by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.teraformZero
+    /// ```
+    ///
+    /// The ability's raw value is `"teraform-zero"`.
     static let teraformZero = TeraformZero.ability
 }
 

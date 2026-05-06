@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as てんきや in Japanese.
+    ///
+    /// The localized name of this ability is `"Forecast"` in English and
+    /// `"てんきや"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Forecast by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.forecast
+    /// ```
+    ///
+    /// The ability's raw value is `"forecast"`.
     static let forecast = Forecast.ability
 }
 

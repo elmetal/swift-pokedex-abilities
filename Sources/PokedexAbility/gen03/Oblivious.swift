@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as どんかん in Japanese.
+    ///
+    /// The localized name of this ability is `"Oblivious"` in English and
+    /// `"どんかん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Oblivious by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.oblivious
+    /// ```
+    ///
+    /// The ability's raw value is `"oblivious"`.
     static let oblivious = Oblivious.ability
 }
 

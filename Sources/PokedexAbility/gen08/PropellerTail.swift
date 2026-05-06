@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as スクリューおびれ in Japanese.
+    ///
+    /// The localized name of this ability is `"Propeller Tail"` in English and
+    /// `"スクリューおびれ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Propeller Tail by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.propellerTail
+    /// ```
+    ///
+    /// The ability's raw value is `"propeller-tail"`.
     static let propellerTail = PropellerTail.ability
 }
 

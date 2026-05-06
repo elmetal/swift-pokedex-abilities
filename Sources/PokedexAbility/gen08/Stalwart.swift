@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as すじがねいり in Japanese.
+    ///
+    /// The localized name of this ability is `"Stalwart"` in English and
+    /// `"すじがねいり"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Stalwart by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.stalwart
+    /// ```
+    ///
+    /// The ability's raw value is `"stalwart"`.
     static let stalwart = Stalwart.ability
 }
 

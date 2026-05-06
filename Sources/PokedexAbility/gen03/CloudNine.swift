@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ノーてんき in Japanese.
+    ///
+    /// The localized name of this ability is `"Cloud Nine"` in English and
+    /// `"ノーてんき"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Cloud Nine by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.cloudNine
+    /// ```
+    ///
+    /// The ability's raw value is `"cloud-nine"`.
     static let cloudNine = CloudNine.ability
 }
 

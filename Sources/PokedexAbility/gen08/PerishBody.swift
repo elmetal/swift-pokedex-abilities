@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ほろびのボディ in Japanese.
+    ///
+    /// The localized name of this ability is `"Perish Body"` in English and
+    /// `"ほろびのボディ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Perish Body by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.perishBody
+    /// ```
+    ///
+    /// The ability's raw value is `"perish-body"`.
     static let perishBody = PerishBody.ability
 }
 

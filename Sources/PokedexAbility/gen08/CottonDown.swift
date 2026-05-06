@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as わたげ in Japanese.
+    ///
+    /// The localized name of this ability is `"Cotton Down"` in English and
+    /// `"わたげ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Cotton Down by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.cottonDown
+    /// ```
+    ///
+    /// The ability's raw value is `"cotton-down"`.
     static let cottonDown = CottonDown.ability
 }
 

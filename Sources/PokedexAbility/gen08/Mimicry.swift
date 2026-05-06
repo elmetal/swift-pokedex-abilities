@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ぎたい in Japanese.
+    ///
+    /// The localized name of this ability is `"Mimicry"` in English and
+    /// `"ぎたい"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Mimicry by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.mimicry
+    /// ```
+    ///
+    /// The ability's raw value is `"mimicry"`.
     static let mimicry = Mimicry.ability
 }
 

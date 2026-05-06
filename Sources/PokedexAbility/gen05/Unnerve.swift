@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as きんちょうかん in Japanese.
+    ///
+    /// The localized name of this ability is `"Unnerve"` in English and
+    /// `"きんちょうかん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Unnerve by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.unnerve
+    /// ```
+    ///
+    /// The ability's raw value is `"unnerve"`.
     static let unnerve = Unnerve.ability
 }
 

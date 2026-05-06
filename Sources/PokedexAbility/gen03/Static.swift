@@ -9,7 +9,34 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as せいでんき in Japanese.
+    ///
+    /// The localized name of this ability is `"Static"` in English and
+    /// `"せいでんき"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Static by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.`static`
+    /// ```
+    ///
+    /// The ability's raw value is `"static"`.
     static let `static` = Static.ability
+
+    /// The Pokémon ability known as せいでんき in Japanese.
+    ///
+    /// The localized name of this ability is `"Static"` in English and
+    /// `"せいでんき"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Static by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.staticAbility
+    /// ```
+    ///
+    /// The ability's raw value is `"static"`.
     static let staticAbility = Static.ability
 }
 

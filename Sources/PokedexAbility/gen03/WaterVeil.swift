@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as みずのベール in Japanese.
+    ///
+    /// The localized name of this ability is `"Water Veil"` in English and
+    /// `"みずのベール"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Water Veil by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.waterVeil
+    /// ```
+    ///
+    /// The ability's raw value is `"water-veil"`.
     static let waterVeil = WaterVeil.ability
 }
 

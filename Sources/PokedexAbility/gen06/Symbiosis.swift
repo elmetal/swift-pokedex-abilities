@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as きょうせい in Japanese.
+    ///
+    /// The localized name of this ability is `"Symbiosis"` in English and
+    /// `"きょうせい"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Symbiosis by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.symbiosis
+    /// ```
+    ///
+    /// The ability's raw value is `"symbiosis"`.
     static let symbiosis = Symbiosis.ability
 }
 

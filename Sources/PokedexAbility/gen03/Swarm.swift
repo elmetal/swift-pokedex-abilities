@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as むしのしらせ in Japanese.
+    ///
+    /// The localized name of this ability is `"Swarm"` in English and
+    /// `"むしのしらせ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Swarm by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.swarm
+    /// ```
+    ///
+    /// The ability's raw value is `"swarm"`.
     static let swarm = Swarm.ability
 }
 

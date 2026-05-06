@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as きずなへんげ in Japanese.
+    ///
+    /// The localized name of this ability is `"Battle Bond"` in English and
+    /// `"きずなへんげ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Battle Bond by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.battleBond
+    /// ```
+    ///
+    /// The ability's raw value is `"battle-bond"`.
     static let battleBond = BattleBond.ability
 }
 

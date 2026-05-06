@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as きけんよち in Japanese.
+    ///
+    /// The localized name of this ability is `"Anticipation"` in English and
+    /// `"きけんよち"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Anticipation by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.anticipation
+    /// ```
+    ///
+    /// The ability's raw value is `"anticipation"`.
     static let anticipation = Anticipation.ability
 }
 

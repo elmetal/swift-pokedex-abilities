@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as かげふみ in Japanese.
+    ///
+    /// The localized name of this ability is `"Shadow Tag"` in English and
+    /// `"かげふみ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Shadow Tag by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.shadowTag
+    /// ```
+    ///
+    /// The ability's raw value is `"shadow-tag"`.
     static let shadowTag = ShadowTag.ability
 }
 

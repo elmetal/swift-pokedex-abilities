@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as えんかく in Japanese.
+    ///
+    /// The localized name of this ability is `"Long Reach"` in English and
+    /// `"えんかく"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Long Reach by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.longReach
+    /// ```
+    ///
+    /// The ability's raw value is `"long-reach"`.
     static let longReach = LongReach.ability
 }
 

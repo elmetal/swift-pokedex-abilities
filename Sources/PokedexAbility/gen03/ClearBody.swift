@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as クリアボディ in Japanese.
+    ///
+    /// The localized name of this ability is `"Clear Body"` in English and
+    /// `"クリアボディ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Clear Body by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.clearBody
+    /// ```
+    ///
+    /// The ability's raw value is `"clear-body"`.
     static let clearBody = ClearBody.ability
 }
 

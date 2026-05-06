@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ミストメイカー in Japanese.
+    ///
+    /// The localized name of this ability is `"Misty Surge"` in English and
+    /// `"ミストメイカー"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Misty Surge by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.mistySurge
+    /// ```
+    ///
+    /// The ability's raw value is `"misty-surge"`.
     static let mistySurge = MistySurge.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as はやてのつばさ in Japanese.
+    ///
+    /// The localized name of this ability is `"Gale Wings"` in English and
+    /// `"はやてのつばさ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Gale Wings by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.galeWings
+    /// ```
+    ///
+    /// The ability's raw value is `"gale-wings"`.
     static let galeWings = GaleWings.ability
 }
 

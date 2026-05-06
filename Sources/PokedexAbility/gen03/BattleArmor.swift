@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as カブトアーマー in Japanese.
+    ///
+    /// The localized name of this ability is `"Battle Armor"` in English and
+    /// `"カブトアーマー"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Battle Armor by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.battleArmor
+    /// ```
+    ///
+    /// The ability's raw value is `"battle-armor"`.
     static let battleArmor = BattleArmor.ability
 }
 

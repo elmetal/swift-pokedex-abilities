@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as アイスフェイス in Japanese.
+    ///
+    /// The localized name of this ability is `"Ice Face"` in English and
+    /// `"アイスフェイス"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Ice Face by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.iceFace
+    /// ```
+    ///
+    /// The ability's raw value is `"ice-face"`.
     static let iceFace = IceFace.ability
 }
 

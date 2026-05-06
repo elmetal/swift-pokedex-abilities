@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ありじごく in Japanese.
+    ///
+    /// The localized name of this ability is `"Arena Trap"` in English and
+    /// `"ありじごく"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Arena Trap by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.arenaTrap
+    /// ```
+    ///
+    /// The ability's raw value is `"arena-trap"`.
     static let arenaTrap = ArenaTrap.ability
 }
 

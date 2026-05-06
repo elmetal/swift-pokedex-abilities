@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as トランジスタ in Japanese.
+    ///
+    /// The localized name of this ability is `"Transistor"` in English and
+    /// `"トランジスタ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Transistor by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.transistor
+    /// ```
+    ///
+    /// The ability's raw value is `"transistor"`.
     static let transistor = Transistor.ability
 }
 

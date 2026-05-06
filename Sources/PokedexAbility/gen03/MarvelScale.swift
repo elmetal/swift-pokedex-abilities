@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ふしぎなうろこ in Japanese.
+    ///
+    /// The localized name of this ability is `"Marvel Scale"` in English and
+    /// `"ふしぎなうろこ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Marvel Scale by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.marvelScale
+    /// ```
+    ///
+    /// The ability's raw value is `"marvel-scale"`.
     static let marvelScale = MarvelScale.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as わざわいのおふだ in Japanese.
+    ///
+    /// The localized name of this ability is `"Tablets of Ruin"` in English and
+    /// `"わざわいのおふだ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Tablets of Ruin by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.tabletsOfRuin
+    /// ```
+    ///
+    /// The ability's raw value is `"tablets-of-ruin"`.
     static let tabletsOfRuin = TabletsOfRuin.ability
 }
 

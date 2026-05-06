@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as せいしんりょく in Japanese.
+    ///
+    /// The localized name of this ability is `"Inner Focus"` in English and
+    /// `"せいしんりょく"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Inner Focus by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.innerFocus
+    /// ```
+    ///
+    /// The ability's raw value is `"inner-focus"`.
     static let innerFocus = InnerFocus.ability
 }
 

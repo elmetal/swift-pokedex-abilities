@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as いしあたま in Japanese.
+    ///
+    /// The localized name of this ability is `"Rock Head"` in English and
+    /// `"いしあたま"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Rock Head by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.rockHead
+    /// ```
+    ///
+    /// The ability's raw value is `"rock-head"`.
     static let rockHead = RockHead.ability
 }
 

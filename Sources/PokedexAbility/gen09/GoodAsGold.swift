@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as おうごんのからだ in Japanese.
+    ///
+    /// The localized name of this ability is `"Good as Gold"` in English and
+    /// `"おうごんのからだ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Good as Gold by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.goodAsGold
+    /// ```
+    ///
+    /// The ability's raw value is `"good-as-gold"`.
     static let goodAsGold = GoodAsGold.ability
 }
 

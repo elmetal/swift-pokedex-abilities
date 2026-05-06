@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as はじまりのうみ in Japanese.
+    ///
+    /// The localized name of this ability is `"Primordial Sea"` in English and
+    /// `"はじまりのうみ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Primordial Sea by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.primordialSea
+    /// ```
+    ///
+    /// The ability's raw value is `"primordial-sea"`.
     static let primordialSea = PrimordialSea.ability
 }
 

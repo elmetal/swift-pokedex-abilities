@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as メガソーラー in Japanese.
+    ///
+    /// The localized name of this ability is `"Mega Sol"` in English and
+    /// `"メガソーラー"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Mega Sol by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.megaSol
+    /// ```
+    ///
+    /// The ability's raw value is `"mega-sol"`.
     static let megaSol = MegaSol.ability
 }
 

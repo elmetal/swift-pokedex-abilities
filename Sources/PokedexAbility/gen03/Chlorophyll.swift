@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ようりょくそ in Japanese.
+    ///
+    /// The localized name of this ability is `"Chlorophyll"` in English and
+    /// `"ようりょくそ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Chlorophyll by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.chlorophyll
+    /// ```
+    ///
+    /// The ability's raw value is `"chlorophyll"`.
     static let chlorophyll = Chlorophyll.ability
 }
 

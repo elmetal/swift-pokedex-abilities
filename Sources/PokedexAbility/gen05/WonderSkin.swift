@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ミラクルスキン in Japanese.
+    ///
+    /// The localized name of this ability is `"Wonder Skin"` in English and
+    /// `"ミラクルスキン"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Wonder Skin by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.wonderSkin
+    /// ```
+    ///
+    /// The ability's raw value is `"wonder-skin"`.
     static let wonderSkin = WonderSkin.ability
 }
 

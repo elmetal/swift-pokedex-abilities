@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as あめふらし in Japanese.
+    ///
+    /// The localized name of this ability is `"Drizzle"` in English and
+    /// `"あめふらし"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Drizzle by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.drizzle
+    /// ```
+    ///
+    /// The ability's raw value is `"drizzle"`.
     static let drizzle = Drizzle.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as みつあつめ in Japanese.
+    ///
+    /// The localized name of this ability is `"Honey Gather"` in English and
+    /// `"みつあつめ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Honey Gather by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.honeyGather
+    /// ```
+    ///
+    /// The ability's raw value is `"honey-gather"`.
     static let honeyGather = HoneyGather.ability
 }
 

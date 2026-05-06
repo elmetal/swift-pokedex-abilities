@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as プリズムアーマー in Japanese.
+    ///
+    /// The localized name of this ability is `"Prism Armor"` in English and
+    /// `"プリズムアーマー"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Prism Armor by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.prismArmor
+    /// ```
+    ///
+    /// The ability's raw value is `"prism-armor"`.
     static let prismArmor = PrismArmor.ability
 }
 

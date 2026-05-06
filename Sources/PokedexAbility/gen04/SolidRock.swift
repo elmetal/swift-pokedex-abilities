@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ハードロック in Japanese.
+    ///
+    /// The localized name of this ability is `"Solid Rock"` in English and
+    /// `"ハードロック"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Solid Rock by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.solidRock
+    /// ```
+    ///
+    /// The ability's raw value is `"solid-rock"`.
     static let solidRock = SolidRock.ability
 }
 

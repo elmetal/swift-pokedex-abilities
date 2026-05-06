@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as よわき in Japanese.
+    ///
+    /// The localized name of this ability is `"Defeatist"` in English and
+    /// `"よわき"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Defeatist by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.defeatist
+    /// ```
+    ///
+    /// The ability's raw value is `"defeatist"`.
     static let defeatist = Defeatist.ability
 }
 

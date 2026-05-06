@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as フィルター in Japanese.
+    ///
+    /// The localized name of this ability is `"Filter"` in English and
+    /// `"フィルター"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Filter by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.filter
+    /// ```
+    ///
+    /// The ability's raw value is `"filter"`.
     static let filter = Filter.ability
 }
 

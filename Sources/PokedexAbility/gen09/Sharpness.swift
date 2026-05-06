@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as きれあじ in Japanese.
+    ///
+    /// The localized name of this ability is `"Sharpness"` in English and
+    /// `"きれあじ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Sharpness by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.sharpness
+    /// ```
+    ///
+    /// The ability's raw value is `"sharpness"`.
     static let sharpness = Sharpness.ability
 }
 

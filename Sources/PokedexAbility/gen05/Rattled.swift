@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as びびり in Japanese.
+    ///
+    /// The localized name of this ability is `"Rattled"` in English and
+    /// `"びびり"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Rattled by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.rattled
+    /// ```
+    ///
+    /// The ability's raw value is `"rattled"`.
     static let rattled = Rattled.ability
 }
 

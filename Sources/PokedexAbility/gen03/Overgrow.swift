@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as しんりょく in Japanese.
+    ///
+    /// The localized name of this ability is `"Overgrow"` in English and
+    /// `"しんりょく"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Overgrow by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.overgrow
+    /// ```
+    ///
+    /// The ability's raw value is `"overgrow"`.
     static let overgrow = Overgrow.ability
 }
 

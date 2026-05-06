@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as わざわいのうつわ in Japanese.
+    ///
+    /// The localized name of this ability is `"Vessel of Ruin"` in English and
+    /// `"わざわいのうつわ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Vessel of Ruin by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.vesselOfRuin
+    /// ```
+    ///
+    /// The ability's raw value is `"vessel-of-ruin"`.
     static let vesselOfRuin = VesselOfRuin.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ポイズンヒール in Japanese.
+    ///
+    /// The localized name of this ability is `"Poison Heal"` in English and
+    /// `"ポイズンヒール"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Poison Heal by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.poisonHeal
+    /// ```
+    ///
+    /// The ability's raw value is `"poison-heal"`.
     static let poisonHeal = PoisonHeal.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as リミットシールド in Japanese.
+    ///
+    /// The localized name of this ability is `"Shields Down"` in English and
+    /// `"リミットシールド"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Shields Down by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.shieldsDown
+    /// ```
+    ///
+    /// The ability's raw value is `"shields-down"`.
     static let shieldsDown = ShieldsDown.ability
 }
 

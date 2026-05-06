@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as はとむね in Japanese.
+    ///
+    /// The localized name of this ability is `"Big Pecks"` in English and
+    /// `"はとむね"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Big Pecks by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.bigPecks
+    /// ```
+    ///
+    /// The ability's raw value is `"big-pecks"`.
     static let bigPecks = BigPecks.ability
 }
 

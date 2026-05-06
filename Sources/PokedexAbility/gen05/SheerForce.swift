@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ちからずく in Japanese.
+    ///
+    /// The localized name of this ability is `"Sheer Force"` in English and
+    /// `"ちからずく"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Sheer Force by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.sheerForce
+    /// ```
+    ///
+    /// The ability's raw value is `"sheer-force"`.
     static let sheerForce = SheerForce.ability
 }
 

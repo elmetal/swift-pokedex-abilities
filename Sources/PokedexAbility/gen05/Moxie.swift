@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as じしんかじょう in Japanese.
+    ///
+    /// The localized name of this ability is `"Moxie"` in English and
+    /// `"じしんかじょう"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Moxie by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.moxie
+    /// ```
+    ///
+    /// The ability's raw value is `"moxie"`.
     static let moxie = Moxie.ability
 }
 

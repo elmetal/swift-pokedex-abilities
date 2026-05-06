@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as びんじょう in Japanese.
+    ///
+    /// The localized name of this ability is `"Opportunist"` in English and
+    /// `"びんじょう"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Opportunist by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.opportunist
+    /// ```
+    ///
+    /// The ability's raw value is `"opportunist"`.
     static let opportunist = Opportunist.ability
 }
 

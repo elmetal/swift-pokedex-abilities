@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ふくつのたて in Japanese.
+    ///
+    /// The localized name of this ability is `"Dauntless Shield"` in English and
+    /// `"ふくつのたて"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Dauntless Shield by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.dauntlessShield
+    /// ```
+    ///
+    /// The ability's raw value is `"dauntless-shield"`.
     static let dauntlessShield = DauntlessShield.ability
 }
 

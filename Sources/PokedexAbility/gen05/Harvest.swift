@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as しゅうかく in Japanese.
+    ///
+    /// The localized name of this ability is `"Harvest"` in English and
+    /// `"しゅうかく"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Harvest by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.harvest
+    /// ```
+    ///
+    /// The ability's raw value is `"harvest"`.
     static let harvest = Harvest.ability
 }
 

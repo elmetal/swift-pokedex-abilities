@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ふみん in Japanese.
+    ///
+    /// The localized name of this ability is `"Insomnia"` in English and
+    /// `"ふみん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Insomnia by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.insomnia
+    /// ```
+    ///
+    /// The ability's raw value is `"insomnia"`.
     static let insomnia = Insomnia.ability
 }
 

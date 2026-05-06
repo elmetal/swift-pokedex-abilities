@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ほおぶくろ in Japanese.
+    ///
+    /// The localized name of this ability is `"Cheek Pouch"` in English and
+    /// `"ほおぶくろ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Cheek Pouch by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.cheekPouch
+    /// ```
+    ///
+    /// The ability's raw value is `"cheek-pouch"`.
     static let cheekPouch = CheekPouch.ability
 }
 

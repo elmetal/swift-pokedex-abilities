@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as すながくれ in Japanese.
+    ///
+    /// The localized name of this ability is `"Sand Veil"` in English and
+    /// `"すながくれ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Sand Veil by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.sandVeil
+    /// ```
+    ///
+    /// The ability's raw value is `"sand-veil"`.
     static let sandVeil = SandVeil.ability
 }
 

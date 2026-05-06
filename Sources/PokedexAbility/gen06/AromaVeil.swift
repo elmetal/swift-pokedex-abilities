@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as アロマベール in Japanese.
+    ///
+    /// The localized name of this ability is `"Aroma Veil"` in English and
+    /// `"アロマベール"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Aroma Veil by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.aromaVeil
+    /// ```
+    ///
+    /// The ability's raw value is `"aroma-veil"`.
     static let aromaVeil = AromaVeil.ability
 }
 

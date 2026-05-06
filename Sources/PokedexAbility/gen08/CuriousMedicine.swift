@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as きみょうなくすり in Japanese.
+    ///
+    /// The localized name of this ability is `"Curious Medicine"` in English and
+    /// `"きみょうなくすり"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Curious Medicine by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.curiousMedicine
+    /// ```
+    ///
+    /// The ability's raw value is `"curious-medicine"`.
     static let curiousMedicine = CuriousMedicine.ability
 }
 

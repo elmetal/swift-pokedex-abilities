@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as まけんき in Japanese.
+    ///
+    /// The localized name of this ability is `"Defiant"` in English and
+    /// `"まけんき"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Defiant by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.defiant
+    /// ```
+    ///
+    /// The ability's raw value is `"defiant"`.
     static let defiant = Defiant.ability
 }
 

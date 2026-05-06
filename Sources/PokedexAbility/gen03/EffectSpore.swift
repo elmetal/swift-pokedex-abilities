@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ほうし in Japanese.
+    ///
+    /// The localized name of this ability is `"Effect Spore"` in English and
+    /// `"ほうし"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Effect Spore by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.effectSpore
+    /// ```
+    ///
+    /// The ability's raw value is `"effect-spore"`.
     static let effectSpore = EffectSpore.ability
 }
 

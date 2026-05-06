@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ぎょぐん in Japanese.
+    ///
+    /// The localized name of this ability is `"Schooling"` in English and
+    /// `"ぎょぐん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Schooling by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.schooling
+    /// ```
+    ///
+    /// The ability's raw value is `"schooling"`.
     static let schooling = Schooling.ability
 }
 

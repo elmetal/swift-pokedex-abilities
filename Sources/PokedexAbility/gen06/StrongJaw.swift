@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as がんじょうあご in Japanese.
+    ///
+    /// The localized name of this ability is `"Strong Jaw"` in English and
+    /// `"がんじょうあご"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Strong Jaw by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.strongJaw
+    /// ```
+    ///
+    /// The ability's raw value is `"strong-jaw"`.
     static let strongJaw = StrongJaw.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as てんのめぐみ in Japanese.
+    ///
+    /// The localized name of this ability is `"Serene Grace"` in English and
+    /// `"てんのめぐみ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Serene Grace by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.sereneGrace
+    /// ```
+    ///
+    /// The ability's raw value is `"serene-grace"`.
     static let sereneGrace = SereneGrace.ability
 }
 

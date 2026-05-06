@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as おわりのだいち in Japanese.
+    ///
+    /// The localized name of this ability is `"Desolate Land"` in English and
+    /// `"おわりのだいち"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Desolate Land by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.desolateLand
+    /// ```
+    ///
+    /// The ability's raw value is `"desolate-land"`.
     static let desolateLand = DesolateLand.ability
 }
 

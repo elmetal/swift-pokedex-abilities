@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as よちむ in Japanese.
+    ///
+    /// The localized name of this ability is `"Forewarn"` in English and
+    /// `"よちむ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Forewarn by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.forewarn
+    /// ```
+    ///
+    /// The ability's raw value is `"forewarn"`.
     static let forewarn = Forewarn.ability
 }
 

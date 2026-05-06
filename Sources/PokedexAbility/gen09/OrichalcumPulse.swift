@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ひひいろのこどう in Japanese.
+    ///
+    /// The localized name of this ability is `"Orichalcum Pulse"` in English and
+    /// `"ひひいろのこどう"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Orichalcum Pulse by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.orichalcumPulse
+    /// ```
+    ///
+    /// The ability's raw value is `"orichalcum-pulse"`.
     static let orichalcumPulse = OrichalcumPulse.ability
 }
 

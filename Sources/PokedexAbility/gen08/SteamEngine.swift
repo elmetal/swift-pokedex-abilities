@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as じょうききかん in Japanese.
+    ///
+    /// The localized name of this ability is `"Steam Engine"` in English and
+    /// `"じょうききかん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Steam Engine by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.steamEngine
+    /// ```
+    ///
+    /// The ability's raw value is `"steam-engine"`.
     static let steamEngine = SteamEngine.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ナイトメア in Japanese.
+    ///
+    /// The localized name of this ability is `"Bad Dreams"` in English and
+    /// `"ナイトメア"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Bad Dreams by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.badDreams
+    /// ```
+    ///
+    /// The ability's raw value is `"bad-dreams"`.
     static let badDreams = BadDreams.ability
 }
 

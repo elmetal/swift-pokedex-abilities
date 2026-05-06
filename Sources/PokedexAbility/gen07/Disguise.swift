@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ばけのかわ in Japanese.
+    ///
+    /// The localized name of this ability is `"Disguise"` in English and
+    /// `"ばけのかわ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Disguise by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.disguise
+    /// ```
+    ///
+    /// The ability's raw value is `"disguise"`.
     static let disguise = Disguise.ability
 }
 

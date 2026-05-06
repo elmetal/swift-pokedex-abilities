@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as かわりもの in Japanese.
+    ///
+    /// The localized name of this ability is `"Imposter"` in English and
+    /// `"かわりもの"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Imposter by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.imposter
+    /// ```
+    ///
+    /// The ability's raw value is `"imposter"`.
     static let imposter = Imposter.ability
 }
 

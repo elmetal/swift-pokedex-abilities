@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as すいすい in Japanese.
+    ///
+    /// The localized name of this ability is `"Swift Swim"` in English and
+    /// `"すいすい"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Swift Swim by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.swiftSwim
+    /// ```
+    ///
+    /// The ability's raw value is `"swift-swim"`.
     static let swiftSwim = SwiftSwim.ability
 }
 

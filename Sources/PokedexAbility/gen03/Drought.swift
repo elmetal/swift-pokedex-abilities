@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ひでり in Japanese.
+    ///
+    /// The localized name of this ability is `"Drought"` in English and
+    /// `"ひでり"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Drought by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.drought
+    /// ```
+    ///
+    /// The ability's raw value is `"drought"`.
     static let drought = Drought.ability
 }
 

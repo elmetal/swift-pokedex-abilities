@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as メロメロボディ in Japanese.
+    ///
+    /// The localized name of this ability is `"Cute Charm"` in English and
+    /// `"メロメロボディ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Cute Charm by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.cuteCharm
+    /// ```
+    ///
+    /// The ability's raw value is `"cute-charm"`.
     static let cuteCharm = CuteCharm.ability
 }
 

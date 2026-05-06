@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ARシステム in Japanese.
+    ///
+    /// The localized name of this ability is `"RKS System"` in English and
+    /// `"ARシステム"` in Japanese.
+    ///
+    /// Use this value when you need to refer to RKS System by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.rksSystem
+    /// ```
+    ///
+    /// The ability's raw value is `"rks-system"`.
     static let rksSystem = RKSSystem.ability
 }
 

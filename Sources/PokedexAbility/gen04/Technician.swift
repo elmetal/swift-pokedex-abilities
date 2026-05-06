@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as テクニシャン in Japanese.
+    ///
+    /// The localized name of this ability is `"Technician"` in English and
+    /// `"テクニシャン"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Technician by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.technician
+    /// ```
+    ///
+    /// The ability's raw value is `"technician"`.
     static let technician = Technician.ability
 }
 

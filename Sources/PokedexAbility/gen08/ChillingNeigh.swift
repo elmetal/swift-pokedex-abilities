@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as しろのいななき in Japanese.
+    ///
+    /// The localized name of this ability is `"Chilling Neigh"` in English and
+    /// `"しろのいななき"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Chilling Neigh by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.chillingNeigh
+    /// ```
+    ///
+    /// The ability's raw value is `"chilling-neigh"`.
     static let chillingNeigh = ChillingNeigh.ability
 }
 

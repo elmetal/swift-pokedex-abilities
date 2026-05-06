@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as すなのちから in Japanese.
+    ///
+    /// The localized name of this ability is `"Sand Force"` in English and
+    /// `"すなのちから"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Sand Force by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.sandForce
+    /// ```
+    ///
+    /// The ability's raw value is `"sand-force"`.
     static let sandForce = SandForce.ability
 }
 

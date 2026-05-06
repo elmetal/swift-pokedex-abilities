@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as スワームチェンジ in Japanese.
+    ///
+    /// The localized name of this ability is `"Power Construct"` in English and
+    /// `"スワームチェンジ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Power Construct by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.powerConstruct
+    /// ```
+    ///
+    /// The ability's raw value is `"power-construct"`.
     static let powerConstruct = PowerConstruct.ability
 }
 

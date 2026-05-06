@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as てんねん in Japanese.
+    ///
+    /// The localized name of this ability is `"Unaware"` in English and
+    /// `"てんねん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Unaware by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.unaware
+    /// ```
+    ///
+    /// The ability's raw value is `"unaware"`.
     static let unaware = Unaware.ability
 }
 

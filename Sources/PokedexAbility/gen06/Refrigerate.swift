@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as フリーズスキン in Japanese.
+    ///
+    /// The localized name of this ability is `"Refrigerate"` in English and
+    /// `"フリーズスキン"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Refrigerate by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.refrigerate
+    /// ```
+    ///
+    /// The ability's raw value is `"refrigerate"`.
     static let refrigerate = Refrigerate.ability
 }
 

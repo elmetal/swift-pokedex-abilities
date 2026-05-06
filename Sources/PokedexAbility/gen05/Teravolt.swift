@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as テラボルテージ in Japanese.
+    ///
+    /// The localized name of this ability is `"Teravolt"` in English and
+    /// `"テラボルテージ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Teravolt by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.teravolt
+    /// ```
+    ///
+    /// The ability's raw value is `"teravolt"`.
     static let teravolt = Teravolt.ability
 }
 

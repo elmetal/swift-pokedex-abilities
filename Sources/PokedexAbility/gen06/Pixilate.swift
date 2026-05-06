@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as フェアリースキン in Japanese.
+    ///
+    /// The localized name of this ability is `"Pixilate"` in English and
+    /// `"フェアリースキン"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Pixilate by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.pixilate
+    /// ```
+    ///
+    /// The ability's raw value is `"pixilate"`.
     static let pixilate = Pixilate.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ききかいひ in Japanese.
+    ///
+    /// The localized name of this ability is `"Emergency Exit"` in English and
+    /// `"ききかいひ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Emergency Exit by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.emergencyExit
+    /// ```
+    ///
+    /// The ability's raw value is `"emergency-exit"`.
     static let emergencyExit = EmergencyExit.ability
 }
 

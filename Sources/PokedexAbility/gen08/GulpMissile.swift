@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as うのミサイル in Japanese.
+    ///
+    /// The localized name of this ability is `"Gulp Missile"` in English and
+    /// `"うのミサイル"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Gulp Missile by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.gulpMissile
+    /// ```
+    ///
+    /// The ability's raw value is `"gulp-missile"`.
     static let gulpMissile = GulpMissile.ability
 }
 

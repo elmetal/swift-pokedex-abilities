@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as かるわざ in Japanese.
+    ///
+    /// The localized name of this ability is `"Unburden"` in English and
+    /// `"かるわざ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Unburden by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.unburden
+    /// ```
+    ///
+    /// The ability's raw value is `"unburden"`.
     static let unburden = Unburden.ability
 }
 

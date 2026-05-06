@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as じきゅうりょく in Japanese.
+    ///
+    /// The localized name of this ability is `"Stamina"` in English and
+    /// `"じきゅうりょく"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Stamina by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.stamina
+    /// ```
+    ///
+    /// The ability's raw value is `"stamina"`.
     static let stamina = Stamina.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as サンパワー in Japanese.
+    ///
+    /// The localized name of this ability is `"Solar Power"` in English and
+    /// `"サンパワー"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Solar Power by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.solarPower
+    /// ```
+    ///
+    /// The ability's raw value is `"solar-power"`.
     static let solarPower = SolarPower.ability
 }
 

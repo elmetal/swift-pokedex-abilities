@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as うるおいボディ in Japanese.
+    ///
+    /// The localized name of this ability is `"Hydration"` in English and
+    /// `"うるおいボディ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Hydration by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.hydration
+    /// ```
+    ///
+    /// The ability's raw value is `"hydration"`.
     static let hydration = Hydration.ability
 }
 

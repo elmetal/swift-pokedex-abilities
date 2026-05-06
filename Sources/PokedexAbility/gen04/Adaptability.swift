@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as てきおうりょく in Japanese.
+    ///
+    /// The localized name of this ability is `"Adaptability"` in English and
+    /// `"てきおうりょく"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Adaptability by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.adaptability
+    /// ```
+    ///
+    /// The ability's raw value is `"adaptability"`.
     static let adaptability = Adaptability.ability
 }
 

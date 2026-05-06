@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as とうそうしん in Japanese.
+    ///
+    /// The localized name of this ability is `"Rivalry"` in English and
+    /// `"とうそうしん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Rivalry by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.rivalry
+    /// ```
+    ///
+    /// The ability's raw value is `"rivalry"`.
     static let rivalry = Rivalry.ability
 }
 

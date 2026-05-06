@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as フラワーベール in Japanese.
+    ///
+    /// The localized name of this ability is `"Flower Veil"` in English and
+    /// `"フラワーベール"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Flower Veil by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.flowerVeil
+    /// ```
+    ///
+    /// The ability's raw value is `"flower-veil"`.
     static let flowerVeil = FlowerVeil.ability
 }
 

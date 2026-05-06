@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ねつぼうそう in Japanese.
+    ///
+    /// The localized name of this ability is `"Flare Boost"` in English and
+    /// `"ねつぼうそう"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Flare Boost by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.flareBoost
+    /// ```
+    ///
+    /// The ability's raw value is `"flare-boost"`.
     static let flareBoost = FlareBoost.ability
 }
 

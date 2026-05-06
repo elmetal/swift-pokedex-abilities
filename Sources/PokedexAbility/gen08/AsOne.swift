@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as じんばいったい in Japanese.
+    ///
+    /// The localized name of this ability is `"As One"` in English and
+    /// `"じんばいったい"` in Japanese.
+    ///
+    /// Use this value when you need to refer to As One by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.asOne
+    /// ```
+    ///
+    /// The ability's raw value is `"as-one"`.
     static let asOne = AsOne.ability
 }
 

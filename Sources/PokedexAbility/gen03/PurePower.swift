@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ヨガパワー in Japanese.
+    ///
+    /// The localized name of this ability is `"Pure Power"` in English and
+    /// `"ヨガパワー"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Pure Power by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.purePower
+    /// ```
+    ///
+    /// The ability's raw value is `"pure-power"`.
     static let purePower = PurePower.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as パステルベール in Japanese.
+    ///
+    /// The localized name of this ability is `"Pastel Veil"` in English and
+    /// `"パステルベール"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Pastel Veil by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.pastelVeil
+    /// ```
+    ///
+    /// The ability's raw value is `"pastel-veil"`.
     static let pastelVeil = PastelVeil.ability
 }
 

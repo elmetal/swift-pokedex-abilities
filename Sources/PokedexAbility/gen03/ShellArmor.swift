@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as シェルアーマー in Japanese.
+    ///
+    /// The localized name of this ability is `"Shell Armor"` in English and
+    /// `"シェルアーマー"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Shell Armor by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.shellArmor
+    /// ```
+    ///
+    /// The ability's raw value is `"shell-armor"`.
     static let shellArmor = ShellArmor.ability
 }
 

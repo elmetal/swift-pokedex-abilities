@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as おもてなし in Japanese.
+    ///
+    /// The localized name of this ability is `"Hospitality"` in English and
+    /// `"おもてなし"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Hospitality by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.hospitality
+    /// ```
+    ///
+    /// The ability's raw value is `"hospitality"`.
     static let hospitality = Hospitality.ability
 }
 

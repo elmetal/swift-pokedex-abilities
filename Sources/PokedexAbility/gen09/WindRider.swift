@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as かぜのり in Japanese.
+    ///
+    /// The localized name of this ability is `"Wind Rider"` in English and
+    /// `"かぜのり"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Wind Rider by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.windRider
+    /// ```
+    ///
+    /// The ability's raw value is `"wind-rider"`.
     static let windRider = WindRider.ability
 }
 

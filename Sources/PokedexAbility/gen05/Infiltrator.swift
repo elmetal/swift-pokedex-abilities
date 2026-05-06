@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as すりぬけ in Japanese.
+    ///
+    /// The localized name of this ability is `"Infiltrator"` in English and
+    /// `"すりぬけ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Infiltrator by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.infiltrator
+    /// ```
+    ///
+    /// The ability's raw value is `"infiltrator"`.
     static let infiltrator = Infiltrator.ability
 }
 

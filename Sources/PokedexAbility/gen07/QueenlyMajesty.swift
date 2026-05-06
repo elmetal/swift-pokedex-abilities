@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as じょおうのいげん in Japanese.
+    ///
+    /// The localized name of this ability is `"Queenly Majesty"` in English and
+    /// `"じょおうのいげん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Queenly Majesty by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.queenlyMajesty
+    /// ```
+    ///
+    /// The ability's raw value is `"queenly-majesty"`.
     static let queenlyMajesty = QueenlyMajesty.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as そうしょく in Japanese.
+    ///
+    /// The localized name of this ability is `"Sap Sipper"` in English and
+    /// `"そうしょく"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Sap Sipper by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.sapSipper
+    /// ```
+    ///
+    /// The ability's raw value is `"sap-sipper"`.
     static let sapSipper = SapSipper.ability
 }
 

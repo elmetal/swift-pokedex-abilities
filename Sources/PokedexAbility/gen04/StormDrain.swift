@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as よびみず in Japanese.
+    ///
+    /// The localized name of this ability is `"Storm Drain"` in English and
+    /// `"よびみず"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Storm Drain by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.stormDrain
+    /// ```
+    ///
+    /// The ability's raw value is `"storm-drain"`.
     static let stormDrain = StormDrain.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as せいぎのこころ in Japanese.
+    ///
+    /// The localized name of this ability is `"Justified"` in English and
+    /// `"せいぎのこころ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Justified by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.justified
+    /// ```
+    ///
+    /// The ability's raw value is `"justified"`.
     static let justified = Justified.ability
 }
 

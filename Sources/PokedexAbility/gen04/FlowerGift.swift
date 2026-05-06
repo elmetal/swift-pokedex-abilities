@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as フラワーギフト in Japanese.
+    ///
+    /// The localized name of this ability is `"Flower Gift"` in English and
+    /// `"フラワーギフト"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Flower Gift by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.flowerGift
+    /// ```
+    ///
+    /// The ability's raw value is `"flower-gift"`.
     static let flowerGift = FlowerGift.ability
 }
 

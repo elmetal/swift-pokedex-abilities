@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as マイティチェンジ in Japanese.
+    ///
+    /// The localized name of this ability is `"Zero to Hero"` in English and
+    /// `"マイティチェンジ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Zero to Hero by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.zeroToHero
+    /// ```
+    ///
+    /// The ability's raw value is `"zero-to-hero"`.
     static let zeroToHero = ZeroToHero.ability
 }
 

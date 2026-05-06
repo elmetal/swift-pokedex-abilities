@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as げきりゅう in Japanese.
+    ///
+    /// The localized name of this ability is `"Torrent"` in English and
+    /// `"げきりゅう"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Torrent by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.torrent
+    /// ```
+    ///
+    /// The ability's raw value is `"torrent"`.
     static let torrent = Torrent.ability
 }
 

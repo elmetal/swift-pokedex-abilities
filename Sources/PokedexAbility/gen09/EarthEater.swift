@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as どしょく in Japanese.
+    ///
+    /// The localized name of this ability is `"Earth Eater"` in English and
+    /// `"どしょく"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Earth Eater by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.earthEater
+    /// ```
+    ///
+    /// The ability's raw value is `"earth-eater"`.
     static let earthEater = EarthEater.ability
 }
 

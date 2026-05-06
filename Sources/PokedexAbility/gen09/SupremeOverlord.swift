@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as そうだいしょう in Japanese.
+    ///
+    /// The localized name of this ability is `"Supreme Overlord"` in English and
+    /// `"そうだいしょう"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Supreme Overlord by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.supremeOverlord
+    /// ```
+    ///
+    /// The ability's raw value is `"supreme-overlord"`.
     static let supremeOverlord = SupremeOverlord.ability
 }
 

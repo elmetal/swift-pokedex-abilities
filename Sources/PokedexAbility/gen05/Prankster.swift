@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as いたずらごころ in Japanese.
+    ///
+    /// The localized name of this ability is `"Prankster"` in English and
+    /// `"いたずらごころ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Prankster by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.prankster
+    /// ```
+    ///
+    /// The ability's raw value is `"prankster"`.
     static let prankster = Prankster.ability
 }
 

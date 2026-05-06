@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ビビッドボディ in Japanese.
+    ///
+    /// The localized name of this ability is `"Dazzling"` in English and
+    /// `"ビビッドボディ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Dazzling by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.dazzling
+    /// ```
+    ///
+    /// The ability's raw value is `"dazzling"`.
     static let dazzling = Dazzling.ability
 }
 

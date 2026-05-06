@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as こだいかっせい in Japanese.
+    ///
+    /// The localized name of this ability is `"Protosynthesis"` in English and
+    /// `"こだいかっせい"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Protosynthesis by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.protosynthesis
+    /// ```
+    ///
+    /// The ability's raw value is `"protosynthesis"`.
     static let protosynthesis = Protosynthesis.ability
 }
 

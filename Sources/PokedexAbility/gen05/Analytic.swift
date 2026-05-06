@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as アナライズ in Japanese.
+    ///
+    /// The localized name of this ability is `"Analytic"` in English and
+    /// `"アナライズ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Analytic by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.analytic
+    /// ```
+    ///
+    /// The ability's raw value is `"analytic"`.
     static let analytic = Analytic.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as にげごし in Japanese.
+    ///
+    /// The localized name of this ability is `"Wimp Out"` in English and
+    /// `"にげごし"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Wimp Out by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.wimpOut
+    /// ```
+    ///
+    /// The ability's raw value is `"wimp-out"`.
     static let wimpOut = WimpOut.ability
 }
 

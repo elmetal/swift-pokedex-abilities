@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as パワースポット in Japanese.
+    ///
+    /// The localized name of this ability is `"Power Spot"` in English and
+    /// `"パワースポット"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Power Spot by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.powerSpot
+    /// ```
+    ///
+    /// The ability's raw value is `"power-spot"`.
     static let powerSpot = PowerSpot.ability
 }
 

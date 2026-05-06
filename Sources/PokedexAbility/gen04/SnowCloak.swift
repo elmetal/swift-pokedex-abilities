@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ゆきがくれ in Japanese.
+    ///
+    /// The localized name of this ability is `"Snow Cloak"` in English and
+    /// `"ゆきがくれ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Snow Cloak by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.snowCloak
+    /// ```
+    ///
+    /// The ability's raw value is `"snow-cloak"`.
     static let snowCloak = SnowCloak.ability
 }
 

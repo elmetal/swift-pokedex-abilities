@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as しんがん in Japanese.
+    ///
+    /// The localized name of this ability is `"Mind's Eye"` in English and
+    /// `"しんがん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Mind's Eye by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.mindsEye
+    /// ```
+    ///
+    /// The ability's raw value is `"minds-eye"`.
     static let mindsEye = MindsEye.ability
 }
 

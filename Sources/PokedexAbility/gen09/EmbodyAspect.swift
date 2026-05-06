@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as おもかげやどし in Japanese.
+    ///
+    /// The localized name of this ability is `"Embody Aspect"` in English and
+    /// `"おもかげやどし"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Embody Aspect by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.embodyAspect
+    /// ```
+    ///
+    /// The ability's raw value is `"embody-aspect"`.
     static let embodyAspect = EmbodyAspect.ability
 }
 

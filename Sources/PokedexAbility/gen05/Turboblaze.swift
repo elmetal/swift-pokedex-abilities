@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ターボブレイズ in Japanese.
+    ///
+    /// The localized name of this ability is `"Turboblaze"` in English and
+    /// `"ターボブレイズ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Turboblaze by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.turboblaze
+    /// ```
+    ///
+    /// The ability's raw value is `"turboblaze"`.
     static let turboblaze = Turboblaze.ability
 }
 

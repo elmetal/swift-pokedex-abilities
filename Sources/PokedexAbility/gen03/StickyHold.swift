@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ねんちゃく in Japanese.
+    ///
+    /// The localized name of this ability is `"Sticky Hold"` in English and
+    /// `"ねんちゃく"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Sticky Hold by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.stickyHold
+    /// ```
+    ///
+    /// The ability's raw value is `"sticky-hold"`.
     static let stickyHold = StickyHold.ability
 }
 

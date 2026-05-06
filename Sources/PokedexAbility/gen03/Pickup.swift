@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ものひろい in Japanese.
+    ///
+    /// The localized name of this ability is `"Pickup"` in English and
+    /// `"ものひろい"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Pickup by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.pickup
+    /// ```
+    ///
+    /// The ability's raw value is `"pickup"`.
     static let pickup = Pickup.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as みずがため in Japanese.
+    ///
+    /// The localized name of this ability is `"Water Compaction"` in English and
+    /// `"みずがため"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Water Compaction by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.waterCompaction
+    /// ```
+    ///
+    /// The ability's raw value is `"water-compaction"`.
     static let waterCompaction = WaterCompaction.ability
 }
 

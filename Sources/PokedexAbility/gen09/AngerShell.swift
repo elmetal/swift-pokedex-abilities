@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as いかりのこうら in Japanese.
+    ///
+    /// The localized name of this ability is `"Anger Shell"` in English and
+    /// `"いかりのこうら"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Anger Shell by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.angerShell
+    /// ```
+    ///
+    /// The ability's raw value is `"anger-shell"`.
     static let angerShell = AngerShell.ability
 }
 

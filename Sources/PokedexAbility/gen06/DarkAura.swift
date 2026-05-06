@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ダークオーラ in Japanese.
+    ///
+    /// The localized name of this ability is `"Dark Aura"` in English and
+    /// `"ダークオーラ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Dark Aura by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.darkAura
+    /// ```
+    ///
+    /// The ability's raw value is `"dark-aura"`.
     static let darkAura = DarkAura.ability
 }
 

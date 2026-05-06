@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as かんつうドリル in Japanese.
+    ///
+    /// The localized name of this ability is `"Piercing Drill"` in English and
+    /// `"かんつうドリル"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Piercing Drill by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.piercingDrill
+    /// ```
+    ///
+    /// The ability's raw value is `"piercing-drill"`.
     static let piercingDrill = PiercingDrill.ability
 }
 

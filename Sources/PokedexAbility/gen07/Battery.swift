@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as バッテリー in Japanese.
+    ///
+    /// The localized name of this ability is `"Battery"` in English and
+    /// `"バッテリー"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Battery by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.battery
+    /// ```
+    ///
+    /// The ability's raw value is `"battery"`.
     static let battery = Battery.ability
 }
 

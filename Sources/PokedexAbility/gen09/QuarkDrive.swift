@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as クォークチャージ in Japanese.
+    ///
+    /// The localized name of this ability is `"Quark Drive"` in English and
+    /// `"クォークチャージ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Quark Drive by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.quarkDrive
+    /// ```
+    ///
+    /// The ability's raw value is `"quark-drive"`.
     static let quarkDrive = QuarkDrive.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as マジックガード in Japanese.
+    ///
+    /// The localized name of this ability is `"Magic Guard"` in English and
+    /// `"マジックガード"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Magic Guard by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.magicGuard
+    /// ```
+    ///
+    /// The ability's raw value is `"magic-guard"`.
     static let magicGuard = MagicGuard.ability
 }
 

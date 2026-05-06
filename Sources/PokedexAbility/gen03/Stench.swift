@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as あくしゅう in Japanese.
+    ///
+    /// The localized name of this ability is `"Stench"` in English and
+    /// `"あくしゅう"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Stench by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.stench
+    /// ```
+    ///
+    /// The ability's raw value is `"stench"`.
     static let stench = Stench.ability
 }
 

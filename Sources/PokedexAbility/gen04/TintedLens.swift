@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as いろめがね in Japanese.
+    ///
+    /// The localized name of this ability is `"Tinted Lens"` in English and
+    /// `"いろめがね"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Tinted Lens by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.tintedLens
+    /// ```
+    ///
+    /// The ability's raw value is `"tinted-lens"`.
     static let tintedLens = TintedLens.ability
 }
 

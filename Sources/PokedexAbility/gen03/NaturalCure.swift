@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as しぜんかいふく in Japanese.
+    ///
+    /// The localized name of this ability is `"Natural Cure"` in English and
+    /// `"しぜんかいふく"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Natural Cure by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.naturalCure
+    /// ```
+    ///
+    /// The ability's raw value is `"natural-cure"`.
     static let naturalCure = NaturalCure.ability
 }
 

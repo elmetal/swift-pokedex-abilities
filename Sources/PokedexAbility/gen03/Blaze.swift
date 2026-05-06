@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as もうか in Japanese.
+    ///
+    /// The localized name of this ability is `"Blaze"` in English and
+    /// `"もうか"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Blaze by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.blaze
+    /// ```
+    ///
+    /// The ability's raw value is `"blaze"`.
     static let blaze = Blaze.ability
 }
 

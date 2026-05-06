@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as はやあし in Japanese.
+    ///
+    /// The localized name of this ability is `"Quick Feet"` in English and
+    /// `"はやあし"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Quick Feet by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.quickFeet
+    /// ```
+    ///
+    /// The ability's raw value is `"quick-feet"`.
     static let quickFeet = QuickFeet.ability
 }
 

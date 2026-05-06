@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ファーコート in Japanese.
+    ///
+    /// The localized name of this ability is `"Fur Coat"` in English and
+    /// `"ファーコート"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Fur Coat by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.furCoat
+    /// ```
+    ///
+    /// The ability's raw value is `"fur-coat"`.
     static let furCoat = FurCoat.ability
 }
 

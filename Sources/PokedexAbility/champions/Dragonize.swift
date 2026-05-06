@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ドラゴンスキン in Japanese.
+    ///
+    /// The localized name of this ability is `"Dragonize"` in English and
+    /// `"ドラゴンスキン"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Dragonize by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.dragonize
+    /// ```
+    ///
+    /// The ability's raw value is `"dragonize"`.
     static let dragonize = Dragonize.ability
 }
 

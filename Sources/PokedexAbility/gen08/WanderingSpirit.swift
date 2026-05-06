@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as さまようたましい in Japanese.
+    ///
+    /// The localized name of this ability is `"Wandering Spirit"` in English and
+    /// `"さまようたましい"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Wandering Spirit by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.wanderingSpirit
+    /// ```
+    ///
+    /// The ability's raw value is `"wandering-spirit"`.
     static let wanderingSpirit = WanderingSpirit.ability
 }
 

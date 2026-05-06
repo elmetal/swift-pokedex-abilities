@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as メガランチャー in Japanese.
+    ///
+    /// The localized name of this ability is `"Mega Launcher"` in English and
+    /// `"メガランチャー"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Mega Launcher by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.megaLauncher
+    /// ```
+    ///
+    /// The ability's raw value is `"mega-launcher"`.
     static let megaLauncher = MegaLauncher.ability
 }
 

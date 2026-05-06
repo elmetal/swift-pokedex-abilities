@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as はがねつかい in Japanese.
+    ///
+    /// The localized name of this ability is `"Steelworker"` in English and
+    /// `"はがねつかい"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Steelworker by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.steelworker
+    /// ```
+    ///
+    /// The ability's raw value is `"steelworker"`.
     static let steelworker = Steelworker.ability
 }
 

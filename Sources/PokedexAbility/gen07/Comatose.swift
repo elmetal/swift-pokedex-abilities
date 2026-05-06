@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ぜったいねむり in Japanese.
+    ///
+    /// The localized name of this ability is `"Comatose"` in English and
+    /// `"ぜったいねむり"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Comatose by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.comatose
+    /// ```
+    ///
+    /// The ability's raw value is `"comatose"`.
     static let comatose = Comatose.ability
 }
 

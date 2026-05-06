@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as オーラブレイク in Japanese.
+    ///
+    /// The localized name of this ability is `"Aura Break"` in English and
+    /// `"オーラブレイク"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Aura Break by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.auraBreak
+    /// ```
+    ///
+    /// The ability's raw value is `"aura-break"`.
     static let auraBreak = AuraBreak.ability
 }
 

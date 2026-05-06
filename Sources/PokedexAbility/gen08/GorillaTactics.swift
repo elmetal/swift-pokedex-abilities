@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ごりむちゅう in Japanese.
+    ///
+    /// The localized name of this ability is `"Gorilla Tactics"` in English and
+    /// `"ごりむちゅう"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Gorilla Tactics by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.gorillaTactics
+    /// ```
+    ///
+    /// The ability's raw value is `"gorilla-tactics"`.
     static let gorillaTactics = GorillaTactics.ability
 }
 

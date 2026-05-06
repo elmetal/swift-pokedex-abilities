@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as じりょく in Japanese.
+    ///
+    /// The localized name of this ability is `"Magnet Pull"` in English and
+    /// `"じりょく"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Magnet Pull by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.magnetPull
+    /// ```
+    ///
+    /// The ability's raw value is `"magnet-pull"`.
     static let magnetPull = MagnetPull.ability
 }
 

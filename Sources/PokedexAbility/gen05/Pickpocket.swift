@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as わるいてぐせ in Japanese.
+    ///
+    /// The localized name of this ability is `"Pickpocket"` in English and
+    /// `"わるいてぐせ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Pickpocket by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.pickpocket
+    /// ```
+    ///
+    /// The ability's raw value is `"pickpocket"`.
     static let pickpocket = Pickpocket.ability
 }
 

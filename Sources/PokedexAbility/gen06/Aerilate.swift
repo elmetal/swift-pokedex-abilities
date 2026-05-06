@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as スカイスキン in Japanese.
+    ///
+    /// The localized name of this ability is `"Aerilate"` in English and
+    /// `"スカイスキン"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Aerilate by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.aerilate
+    /// ```
+    ///
+    /// The ability's raw value is `"aerilate"`.
     static let aerilate = Aerilate.ability
 }
 

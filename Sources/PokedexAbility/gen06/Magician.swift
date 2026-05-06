@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as マジシャン in Japanese.
+    ///
+    /// The localized name of this ability is `"Magician"` in English and
+    /// `"マジシャン"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Magician by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.magician
+    /// ```
+    ///
+    /// The ability's raw value is `"magician"`.
     static let magician = Magician.ability
 }
 

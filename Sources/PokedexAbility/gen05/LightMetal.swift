@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ライトメタル in Japanese.
+    ///
+    /// The localized name of this ability is `"Light Metal"` in English and
+    /// `"ライトメタル"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Light Metal by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.lightMetal
+    /// ```
+    ///
+    /// The ability's raw value is `"light-metal"`.
     static let lightMetal = LightMetal.ability
 }
 

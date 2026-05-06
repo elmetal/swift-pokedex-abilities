@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as かたやぶり in Japanese.
+    ///
+    /// The localized name of this ability is `"Mold Breaker"` in English and
+    /// `"かたやぶり"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Mold Breaker by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.moldBreaker
+    /// ```
+    ///
+    /// The ability's raw value is `"mold-breaker"`.
     static let moldBreaker = MoldBreaker.ability
 }
 

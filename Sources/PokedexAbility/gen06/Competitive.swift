@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as かちき in Japanese.
+    ///
+    /// The localized name of this ability is `"Competitive"` in English and
+    /// `"かちき"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Competitive by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.competitive
+    /// ```
+    ///
+    /// The ability's raw value is `"competitive"`.
     static let competitive = Competitive.ability
 }
 

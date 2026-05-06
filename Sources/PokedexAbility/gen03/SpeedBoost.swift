@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as かそく in Japanese.
+    ///
+    /// The localized name of this ability is `"Speed Boost"` in English and
+    /// `"かそく"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Speed Boost by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.speedBoost
+    /// ```
+    ///
+    /// The ability's raw value is `"speed-boost"`.
     static let speedBoost = SpeedBoost.ability
 }
 

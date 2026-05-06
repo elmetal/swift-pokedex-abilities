@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ノーマルスキン in Japanese.
+    ///
+    /// The localized name of this ability is `"Normalize"` in English and
+    /// `"ノーマルスキン"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Normalize by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.normalize
+    /// ```
+    ///
+    /// The ability's raw value is `"normalize"`.
     static let normalize = Normalize.ability
 }
 

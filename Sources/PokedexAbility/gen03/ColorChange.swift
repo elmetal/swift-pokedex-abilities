@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as へんしょく in Japanese.
+    ///
+    /// The localized name of this ability is `"Color Change"` in English and
+    /// `"へんしょく"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Color Change by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.colorChange
+    /// ```
+    ///
+    /// The ability's raw value is `"color-change"`.
     static let colorChange = ColorChange.ability
 }
 

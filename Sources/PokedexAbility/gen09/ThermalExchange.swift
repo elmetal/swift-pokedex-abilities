@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ねつこうかん in Japanese.
+    ///
+    /// The localized name of this ability is `"Thermal Exchange"` in English and
+    /// `"ねつこうかん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Thermal Exchange by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.thermalExchange
+    /// ```
+    ///
+    /// The ability's raw value is `"thermal-exchange"`.
     static let thermalExchange = ThermalExchange.ability
 }
 

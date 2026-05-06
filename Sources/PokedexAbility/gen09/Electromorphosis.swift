@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as でんきにかえる in Japanese.
+    ///
+    /// The localized name of this ability is `"Electromorphosis"` in English and
+    /// `"でんきにかえる"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Electromorphosis by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.electromorphosis
+    /// ```
+    ///
+    /// The ability's raw value is `"electromorphosis"`.
     static let electromorphosis = Electromorphosis.ability
 }
 

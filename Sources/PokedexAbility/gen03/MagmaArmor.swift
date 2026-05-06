@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as マグマのよろい in Japanese.
+    ///
+    /// The localized name of this ability is `"Magma Armor"` in English and
+    /// `"マグマのよろい"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Magma Armor by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.magmaArmor
+    /// ```
+    ///
+    /// The ability's raw value is `"magma-armor"`.
     static let magmaArmor = MagmaArmor.ability
 }
 

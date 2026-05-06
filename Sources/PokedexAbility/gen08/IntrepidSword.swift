@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ふとうのけん in Japanese.
+    ///
+    /// The localized name of this ability is `"Intrepid Sword"` in English and
+    /// `"ふとうのけん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Intrepid Sword by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.intrepidSword
+    /// ```
+    ///
+    /// The ability's raw value is `"intrepid-sword"`.
     static let intrepidSword = IntrepidSword.ability
 }
 

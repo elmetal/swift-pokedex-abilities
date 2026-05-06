@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as エレキスキン in Japanese.
+    ///
+    /// The localized name of this ability is `"Galvanize"` in English and
+    /// `"エレキスキン"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Galvanize by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.galvanize
+    /// ```
+    ///
+    /// The ability's raw value is `"galvanize"`.
     static let galvanize = Galvanize.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ちどりあし in Japanese.
+    ///
+    /// The localized name of this ability is `"Tangled Feet"` in English and
+    /// `"ちどりあし"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Tangled Feet by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.tangledFeet
+    /// ```
+    ///
+    /// The ability's raw value is `"tangled-feet"`.
     static let tangledFeet = TangledFeet.ability
 }
 

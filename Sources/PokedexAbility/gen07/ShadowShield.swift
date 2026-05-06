@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ファントムガード in Japanese.
+    ///
+    /// The localized name of this ability is `"Shadow Shield"` in English and
+    /// `"ファントムガード"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Shadow Shield by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.shadowShield
+    /// ```
+    ///
+    /// The ability's raw value is `"shadow-shield"`.
     static let shadowShield = ShadowShield.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ちくでん in Japanese.
+    ///
+    /// The localized name of this ability is `"Volt Absorb"` in English and
+    /// `"ちくでん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Volt Absorb by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.voltAbsorb
+    /// ```
+    ///
+    /// The ability's raw value is `"volt-absorb"`.
     static let voltAbsorb = VoltAbsorb.ability
 }
 

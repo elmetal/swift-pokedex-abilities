@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as はがねのせいしん in Japanese.
+    ///
+    /// The localized name of this ability is `"Steely Spirit"` in English and
+    /// `"はがねのせいしん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Steely Spirit by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.steelySpirit
+    /// ```
+    ///
+    /// The ability's raw value is `"steely-spirit"`.
     static let steelySpirit = SteelySpirit.ability
 }
 

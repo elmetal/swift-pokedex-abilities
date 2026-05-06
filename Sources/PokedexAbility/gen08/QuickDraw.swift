@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as クイックドロウ in Japanese.
+    ///
+    /// The localized name of this ability is `"Quick Draw"` in English and
+    /// `"クイックドロウ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Quick Draw by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.quickDraw
+    /// ```
+    ///
+    /// The ability's raw value is `"quick-draw"`.
     static let quickDraw = QuickDraw.ability
 }
 

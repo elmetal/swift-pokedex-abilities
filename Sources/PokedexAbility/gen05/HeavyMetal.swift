@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ヘヴィメタル in Japanese.
+    ///
+    /// The localized name of this ability is `"Heavy Metal"` in English and
+    /// `"ヘヴィメタル"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Heavy Metal by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.heavyMetal
+    /// ```
+    ///
+    /// The ability's raw value is `"heavy-metal"`.
     static let heavyMetal = HeavyMetal.ability
 }
 

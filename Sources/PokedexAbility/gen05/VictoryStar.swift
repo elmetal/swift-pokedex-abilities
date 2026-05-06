@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as しょうりのほし in Japanese.
+    ///
+    /// The localized name of this ability is `"Victory Star"` in English and
+    /// `"しょうりのほし"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Victory Star by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.victoryStar
+    /// ```
+    ///
+    /// The ability's raw value is `"victory-star"`.
     static let victoryStar = VictoryStar.ability
 }
 

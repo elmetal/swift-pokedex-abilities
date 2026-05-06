@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ミラーアーマー in Japanese.
+    ///
+    /// The localized name of this ability is `"Mirror Armor"` in English and
+    /// `"ミラーアーマー"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Mirror Armor by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.mirrorArmor
+    /// ```
+    ///
+    /// The ability's raw value is `"mirror-armor"`.
     static let mirrorArmor = MirrorArmor.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as きゅうばん in Japanese.
+    ///
+    /// The localized name of this ability is `"Suction Cups"` in English and
+    /// `"きゅうばん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Suction Cups by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.suctionCups
+    /// ```
+    ///
+    /// The ability's raw value is `"suction-cups"`.
     static let suctionCups = SuctionCups.ability
 }
 

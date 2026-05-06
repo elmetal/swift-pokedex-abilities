@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ほのおのからだ in Japanese.
+    ///
+    /// The localized name of this ability is `"Flame Body"` in English and
+    /// `"ほのおのからだ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Flame Body by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.flameBody
+    /// ```
+    ///
+    /// The ability's raw value is `"flame-body"`.
     static let flameBody = FlameBody.ability
 }
 

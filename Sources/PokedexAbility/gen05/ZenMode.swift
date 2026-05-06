@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ダルマモード in Japanese.
+    ///
+    /// The localized name of this ability is `"Zen Mode"` in English and
+    /// `"ダルマモード"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Zen Mode by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.zenMode
+    /// ```
+    ///
+    /// The ability's raw value is `"zen-mode"`.
     static let zenMode = ZenMode.ability
 }
 

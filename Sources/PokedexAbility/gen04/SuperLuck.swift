@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as きょううん in Japanese.
+    ///
+    /// The localized name of this ability is `"Super Luck"` in English and
+    /// `"きょううん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Super Luck by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.superLuck
+    /// ```
+    ///
+    /// The ability's raw value is `"super-luck"`.
     static let superLuck = SuperLuck.ability
 }
 

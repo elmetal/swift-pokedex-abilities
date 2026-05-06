@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ふかしのこぶし in Japanese.
+    ///
+    /// The localized name of this ability is `"Unseen Fist"` in English and
+    /// `"ふかしのこぶし"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Unseen Fist by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.unseenFist
+    /// ```
+    ///
+    /// The ability's raw value is `"unseen-fist"`.
     static let unseenFist = UnseenFist.ability
 }
 

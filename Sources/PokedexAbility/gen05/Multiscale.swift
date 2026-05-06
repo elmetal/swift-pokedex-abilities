@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as マルチスケイル in Japanese.
+    ///
+    /// The localized name of this ability is `"Multiscale"` in English and
+    /// `"マルチスケイル"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Multiscale by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.multiscale
+    /// ```
+    ///
+    /// The ability's raw value is `"multiscale"`.
     static let multiscale = Multiscale.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as どくしゅ in Japanese.
+    ///
+    /// The localized name of this ability is `"Poison Touch"` in English and
+    /// `"どくしゅ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Poison Touch by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.poisonTouch
+    /// ```
+    ///
+    /// The ability's raw value is `"poison-touch"`.
     static let poisonTouch = PoisonTouch.ability
 }
 

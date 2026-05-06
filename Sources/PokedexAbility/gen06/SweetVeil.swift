@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as スイートベール in Japanese.
+    ///
+    /// The localized name of this ability is `"Sweet Veil"` in English and
+    /// `"スイートベール"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Sweet Veil by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.sweetVeil
+    /// ```
+    ///
+    /// The ability's raw value is `"sweet-veil"`.
     static let sweetVeil = SweetVeil.ability
 }
 

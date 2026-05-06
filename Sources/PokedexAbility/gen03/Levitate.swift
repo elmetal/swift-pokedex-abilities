@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ふゆう in Japanese.
+    ///
+    /// The localized name of this ability is `"Levitate"` in English and
+    /// `"ふゆう"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Levitate by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.levitate
+    /// ```
+    ///
+    /// The ability's raw value is `"levitate"`.
     static let levitate = Levitate.ability
 }
 

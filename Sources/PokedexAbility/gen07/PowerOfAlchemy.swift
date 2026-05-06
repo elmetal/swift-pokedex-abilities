@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as かがくのちから in Japanese.
+    ///
+    /// The localized name of this ability is `"Power of Alchemy"` in English and
+    /// `"かがくのちから"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Power of Alchemy by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.powerOfAlchemy
+    /// ```
+    ///
+    /// The ability's raw value is `"power-of-alchemy"`.
     static let powerOfAlchemy = PowerOfAlchemy.ability
 }
 

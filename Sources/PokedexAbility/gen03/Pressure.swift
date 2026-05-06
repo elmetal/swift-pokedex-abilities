@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as プレッシャー in Japanese.
+    ///
+    /// The localized name of this ability is `"Pressure"` in English and
+    /// `"プレッシャー"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Pressure by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.pressure
+    /// ```
+    ///
+    /// The ability's raw value is `"pressure"`.
     static let pressure = Pressure.ability
 }
 

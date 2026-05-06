@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ぼうだん in Japanese.
+    ///
+    /// The localized name of this ability is `"Bulletproof"` in English and
+    /// `"ぼうだん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Bulletproof by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.bulletproof
+    /// ```
+    ///
+    /// The ability's raw value is `"bulletproof"`.
     static let bulletproof = Bulletproof.ability
 }
 

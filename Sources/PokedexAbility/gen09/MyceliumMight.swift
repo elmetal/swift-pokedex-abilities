@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as きんしのちから in Japanese.
+    ///
+    /// The localized name of this ability is `"Mycelium Might"` in English and
+    /// `"きんしのちから"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Mycelium Might by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.myceliumMight
+    /// ```
+    ///
+    /// The ability's raw value is `"mycelium-might"`.
     static let myceliumMight = MyceliumMight.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as かいりきバサミ in Japanese.
+    ///
+    /// The localized name of this ability is `"Hyper Cutter"` in English and
+    /// `"かいりきバサミ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Hyper Cutter by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.hyperCutter
+    /// ```
+    ///
+    /// The ability's raw value is `"hyper-cutter"`.
     static let hyperCutter = HyperCutter.ability
 }
 

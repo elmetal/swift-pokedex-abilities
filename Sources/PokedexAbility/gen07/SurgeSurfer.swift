@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as サーフテール in Japanese.
+    ///
+    /// The localized name of this ability is `"Surge Surfer"` in English and
+    /// `"サーフテール"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Surge Surfer by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.surgeSurfer
+    /// ```
+    ///
+    /// The ability's raw value is `"surge-surfer"`.
     static let surgeSurfer = SurgeSurfer.ability
 }
 

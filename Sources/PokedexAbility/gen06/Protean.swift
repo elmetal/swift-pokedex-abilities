@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as へんげんじざい in Japanese.
+    ///
+    /// The localized name of this ability is `"Protean"` in English and
+    /// `"へんげんじざい"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Protean by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.protean
+    /// ```
+    ///
+    /// The ability's raw value is `"protean"`.
     static let protean = Protean.ability
 }
 

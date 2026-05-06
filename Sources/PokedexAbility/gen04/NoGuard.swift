@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ノーガード in Japanese.
+    ///
+    /// The localized name of this ability is `"No Guard"` in English and
+    /// `"ノーガード"` in Japanese.
+    ///
+    /// Use this value when you need to refer to No Guard by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.noGuard
+    /// ```
+    ///
+    /// The ability's raw value is `"no-guard"`.
     static let noGuard = NoGuard.ability
 }
 

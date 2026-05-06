@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as かがくへんかガス in Japanese.
+    ///
+    /// The localized name of this ability is `"Neutralizing Gas"` in English and
+    /// `"かがくへんかガス"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Neutralizing Gas by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.neutralizingGas
+    /// ```
+    ///
+    /// The ability's raw value is `"neutralizing-gas"`.
     static let neutralizingGas = NeutralizingGas.ability
 }
 

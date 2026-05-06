@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as リベロ in Japanese.
+    ///
+    /// The localized name of this ability is `"Libero"` in English and
+    /// `"リベロ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Libero by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.libero
+    /// ```
+    ///
+    /// The ability's raw value is `"libero"`.
     static let libero = Libero.ability
 }
 

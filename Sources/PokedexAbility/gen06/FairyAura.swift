@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as フェアリーオーラ in Japanese.
+    ///
+    /// The localized name of this ability is `"Fairy Aura"` in English and
+    /// `"フェアリーオーラ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Fairy Aura by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.fairyAura
+    /// ```
+    ///
+    /// The ability's raw value is `"fairy-aura"`.
     static let fairyAura = FairyAura.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as イリュージョン in Japanese.
+    ///
+    /// The localized name of this ability is `"Illusion"` in English and
+    /// `"イリュージョン"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Illusion by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.illusion
+    /// ```
+    ///
+    /// The ability's raw value is `"illusion"`.
     static let illusion = Illusion.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as どくげしょう in Japanese.
+    ///
+    /// The localized name of this ability is `"Toxic Debris"` in English and
+    /// `"どくげしょう"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Toxic Debris by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.toxicDebris
+    /// ```
+    ///
+    /// The ability's raw value is `"toxic-debris"`.
     static let toxicDebris = ToxicDebris.ability
 }
 

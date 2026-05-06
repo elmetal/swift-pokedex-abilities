@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as あまのじゃく in Japanese.
+    ///
+    /// The localized name of this ability is `"Contrary"` in English and
+    /// `"あまのじゃく"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Contrary by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.contrary
+    /// ```
+    ///
+    /// The ability's raw value is `"contrary"`.
     static let contrary = Contrary.ability
 }
 

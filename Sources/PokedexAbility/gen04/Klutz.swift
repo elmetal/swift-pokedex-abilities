@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ぶきよう in Japanese.
+    ///
+    /// The localized name of this ability is `"Klutz"` in English and
+    /// `"ぶきよう"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Klutz by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.klutz
+    /// ```
+    ///
+    /// The ability's raw value is `"klutz"`.
     static let klutz = Klutz.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as プラス in Japanese.
+    ///
+    /// The localized name of this ability is `"Plus"` in English and
+    /// `"プラス"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Plus by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.plus
+    /// ```
+    ///
+    /// The ability's raw value is `"plus"`.
     static let plus = Plus.ability
 }
 

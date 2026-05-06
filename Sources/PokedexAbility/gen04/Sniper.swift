@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as スナイパー in Japanese.
+    ///
+    /// The localized name of this ability is `"Sniper"` in English and
+    /// `"スナイパー"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Sniper by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.sniper
+    /// ```
+    ///
+    /// The ability's raw value is `"sniper"`.
     static let sniper = Sniper.ability
 }
 

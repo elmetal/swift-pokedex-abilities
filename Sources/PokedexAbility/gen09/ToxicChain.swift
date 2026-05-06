@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as どくのくさり in Japanese.
+    ///
+    /// The localized name of this ability is `"Toxic Chain"` in English and
+    /// `"どくのくさり"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Toxic Chain by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.toxicChain
+    /// ```
+    ///
+    /// The ability's raw value is `"toxic-chain"`.
     static let toxicChain = ToxicChain.ability
 }
 

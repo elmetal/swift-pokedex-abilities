@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as さいせいりょく in Japanese.
+    ///
+    /// The localized name of this ability is `"Regenerator"` in English and
+    /// `"さいせいりょく"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Regenerator by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.regenerator
+    /// ```
+    ///
+    /// The ability's raw value is `"regenerator"`.
     static let regenerator = Regenerator.ability
 }
 

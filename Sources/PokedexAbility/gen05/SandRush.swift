@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as すなかき in Japanese.
+    ///
+    /// The localized name of this ability is `"Sand Rush"` in English and
+    /// `"すなかき"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Sand Rush by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.sandRush
+    /// ```
+    ///
+    /// The ability's raw value is `"sand-rush"`.
     static let sandRush = SandRush.ability
 }
 

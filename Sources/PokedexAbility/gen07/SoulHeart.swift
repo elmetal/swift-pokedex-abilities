@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ソウルハート in Japanese.
+    ///
+    /// The localized name of this ability is `"Soul-Heart"` in English and
+    /// `"ソウルハート"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Soul-Heart by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.soulHeart
+    /// ```
+    ///
+    /// The ability's raw value is `"soul-heart"`.
     static let soulHeart = SoulHeart.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ダウンロード in Japanese.
+    ///
+    /// The localized name of this ability is `"Download"` in English and
+    /// `"ダウンロード"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Download by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.download
+    /// ```
+    ///
+    /// The ability's raw value is `"download"`.
     static let download = Download.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as こんがりボディ in Japanese.
+    ///
+    /// The localized name of this ability is `"Well-Baked Body"` in English and
+    /// `"こんがりボディ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Well-Baked Body by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.wellBakedBody
+    /// ```
+    ///
+    /// The ability's raw value is `"well-baked-body"`.
     static let wellBakedBody = WellBakedBody.ability
 }
 

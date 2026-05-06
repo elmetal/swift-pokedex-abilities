@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as ハドロンエンジン in Japanese.
+    ///
+    /// The localized name of this ability is `"Hadron Engine"` in English and
+    /// `"ハドロンエンジン"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Hadron Engine by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.hadronEngine
+    /// ```
+    ///
+    /// The ability's raw value is `"hadron-engine"`.
     static let hadronEngine = HadronEngine.ability
 }
 

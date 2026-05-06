@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as のろわれボディ in Japanese.
+    ///
+    /// The localized name of this ability is `"Cursed Body"` in English and
+    /// `"のろわれボディ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Cursed Body by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.cursedBody
+    /// ```
+    ///
+    /// The ability's raw value is `"cursed-body"`.
     static let cursedBody = CursedBody.ability
 }
 

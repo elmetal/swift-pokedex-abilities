@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as おみとおし in Japanese.
+    ///
+    /// The localized name of this ability is `"Frisk"` in English and
+    /// `"おみとおし"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Frisk by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.frisk
+    /// ```
+    ///
+    /// The ability's raw value is `"frisk"`.
     static let frisk = Frisk.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as おどりこ in Japanese.
+    ///
+    /// The localized name of this ability is `"Dancer"` in English and
+    /// `"おどりこ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Dancer by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.dancer
+    /// ```
+    ///
+    /// The ability's raw value is `"dancer"`.
     static let dancer = Dancer.ability
 }
 

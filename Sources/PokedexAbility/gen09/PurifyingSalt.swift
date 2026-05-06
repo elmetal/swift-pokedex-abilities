@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as きよめのしお in Japanese.
+    ///
+    /// The localized name of this ability is `"Purifying Salt"` in English and
+    /// `"きよめのしお"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Purifying Salt by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.purifyingSalt
+    /// ```
+    ///
+    /// The ability's raw value is `"purifying-salt"`.
     static let purifyingSalt = PurifyingSalt.ability
 }
 

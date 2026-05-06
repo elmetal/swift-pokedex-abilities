@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as はやおき in Japanese.
+    ///
+    /// The localized name of this ability is `"Early Bird"` in English and
+    /// `"はやおき"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Early Bird by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.earlyBird
+    /// ```
+    ///
+    /// The ability's raw value is `"early-bird"`.
     static let earlyBird = EarlyBird.ability
 }
 

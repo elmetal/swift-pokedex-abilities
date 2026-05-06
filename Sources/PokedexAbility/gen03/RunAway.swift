@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as にげあし in Japanese.
+    ///
+    /// The localized name of this ability is `"Run Away"` in English and
+    /// `"にげあし"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Run Away by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.runAway
+    /// ```
+    ///
+    /// The ability's raw value is `"run-away"`.
     static let runAway = RunAway.ability
 }
 

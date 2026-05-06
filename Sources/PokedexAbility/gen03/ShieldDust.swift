@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as りんぷん in Japanese.
+    ///
+    /// The localized name of this ability is `"Shield Dust"` in English and
+    /// `"りんぷん"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Shield Dust by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.shieldDust
+    /// ```
+    ///
+    /// The ability's raw value is `"shield-dust"`.
     static let shieldDust = ShieldDust.ability
 }
 

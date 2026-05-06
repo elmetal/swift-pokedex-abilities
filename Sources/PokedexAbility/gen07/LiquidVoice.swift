@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as うるおいボイス in Japanese.
+    ///
+    /// The localized name of this ability is `"Liquid Voice"` in English and
+    /// `"うるおいボイス"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Liquid Voice by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.liquidVoice
+    /// ```
+    ///
+    /// The ability's raw value is `"liquid-voice"`.
     static let liquidVoice = LiquidVoice.ability
 }
 

@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as リーフガード in Japanese.
+    ///
+    /// The localized name of this ability is `"Leaf Guard"` in English and
+    /// `"リーフガード"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Leaf Guard by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.leafGuard
+    /// ```
+    ///
+    /// The ability's raw value is `"leaf-guard"`.
     static let leafGuard = LeafGuard.ability
 }
 

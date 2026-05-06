@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as くいしんぼう in Japanese.
+    ///
+    /// The localized name of this ability is `"Gluttony"` in English and
+    /// `"くいしんぼう"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Gluttony by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.gluttony
+    /// ```
+    ///
+    /// The ability's raw value is `"gluttony"`.
     static let gluttony = Gluttony.ability
 }
 

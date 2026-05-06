@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as こんじょう in Japanese.
+    ///
+    /// The localized name of this ability is `"Guts"` in English and
+    /// `"こんじょう"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Guts by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.guts
+    /// ```
+    ///
+    /// The ability's raw value is `"guts"`.
     static let guts = Guts.ability
 }
 

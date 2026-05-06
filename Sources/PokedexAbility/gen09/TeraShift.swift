@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as テラスチェンジ in Japanese.
+    ///
+    /// The localized name of this ability is `"Tera Shift"` in English and
+    /// `"テラスチェンジ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Tera Shift by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.teraShift
+    /// ```
+    ///
+    /// The ability's raw value is `"tera-shift"`.
     static let teraShift = TeraShift.ability
 }
 

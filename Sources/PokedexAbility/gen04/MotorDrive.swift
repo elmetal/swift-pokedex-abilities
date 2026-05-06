@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as でんきエンジン in Japanese.
+    ///
+    /// The localized name of this ability is `"Motor Drive"` in English and
+    /// `"でんきエンジン"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Motor Drive by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.motorDrive
+    /// ```
+    ///
+    /// The ability's raw value is `"motor-drive"`.
     static let motorDrive = MotorDrive.ability
 }
 

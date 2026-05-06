@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as こぼれダネ in Japanese.
+    ///
+    /// The localized name of this ability is `"Seed Sower"` in English and
+    /// `"こぼれダネ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Seed Sower by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.seedSower
+    /// ```
+    ///
+    /// The ability's raw value is `"seed-sower"`.
     static let seedSower = SeedSower.ability
 }
 

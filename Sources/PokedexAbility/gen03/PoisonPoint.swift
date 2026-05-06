@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as どくのトゲ in Japanese.
+    ///
+    /// The localized name of this ability is `"Poison Point"` in English and
+    /// `"どくのトゲ"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Poison Point by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.poisonPoint
+    /// ```
+    ///
+    /// The ability's raw value is `"poison-point"`.
     static let poisonPoint = PoisonPoint.ability
 }
 
