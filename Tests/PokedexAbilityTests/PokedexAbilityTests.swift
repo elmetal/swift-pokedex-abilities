@@ -3,7 +3,7 @@ import Testing
 @testable import PokedexAbility
 
 @Test func includesGenerationIIIThroughVIAbilityDefinitions() {
-    #expect(PokemonAbilityDefinitions.all.count == 192)
+    #expect(PokemonAbilityDefinitions.all.count == 191)
 }
 
 @Test func formatsGenerationIIIAbilityNames() {
@@ -11,7 +11,6 @@ import Testing
 
     #expect(PokemonAbility.blaze.formatted(locale: locale) == "もうか")
     #expect(PokemonAbility.airLock.formatted(locale: locale) == "エアロック")
-    #expect(PokemonAbility.cacophony.formatted(locale: locale) == "そうおん")
 }
 
 @Test func parsesGenerationIIIAbilityNames() throws {

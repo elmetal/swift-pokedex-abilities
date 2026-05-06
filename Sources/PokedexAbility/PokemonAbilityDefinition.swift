@@ -101,7 +101,6 @@ enum PokemonAbilityDefinitions {
         WhiteSmoke.self,
         PurePower.self,
         ShellArmor.self,
-        Cacophony.self,
         AirLock.self,
         Adaptability.self,
         Aftermath.self,
