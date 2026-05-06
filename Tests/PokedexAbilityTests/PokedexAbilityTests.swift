@@ -2,8 +2,8 @@ import Foundation
 import Testing
 @testable import PokedexAbility
 
-@Test func includesGenerationIIIThroughVIIIAbilityDefinitions() {
-    #expect(PokemonAbilityDefinitions.all.count == 266)
+@Test func includesGenerationIIIThroughIXAndChampionsAbilityDefinitions() {
+    #expect(PokemonAbilityDefinitions.all.count == 310)
 }
 
 @Test func formatsGenerationIIIAbilityNames() {
@@ -99,4 +99,36 @@ import Testing
     #expect(try strategy.parse("じんばいったい") == .asOne)
     #expect(try strategy.parse("ふとうのけん") == .intrepidSword)
     #expect(try strategy.parse("wandering-spirit") == .wanderingSpirit)
+}
+
+@Test func formatsGenerationIXAbilityNames() {
+    let locale = Locale(identifier: "ja_JP")
+
+    #expect(PokemonAbility.angerShell.formatted(locale: locale) == "いかりのこうら")
+    #expect(PokemonAbility.goodAsGold.formatted(locale: locale) == "おうごんのからだ")
+    #expect(PokemonAbility.zeroToHero.formatted(locale: locale) == "マイティチェンジ")
+}
+
+@Test func parsesGenerationIXAbilityNames() throws {
+    let strategy = PokemonAbility.ParseStrategy(locale: Locale(identifier: "ja_JP"))
+
+    #expect(try strategy.parse("いかりのこうら") == .angerShell)
+    #expect(try strategy.parse("おうごんのからだ") == .goodAsGold)
+    #expect(try strategy.parse("zero-to-hero") == .zeroToHero)
+}
+
+@Test func formatsChampionsAbilityNames() {
+    let locale = Locale(identifier: "ja_JP")
+
+    #expect(PokemonAbility.dragonize.formatted(locale: locale) == "ドラゴンスキン")
+    #expect(PokemonAbility.megaSol.formatted(locale: locale) == "メガソーラー")
+    #expect(PokemonAbility.spicySpray.formatted(locale: locale) == "とびだすハバネロ")
+}
+
+@Test func parsesChampionsAbilityNames() throws {
+    let strategy = PokemonAbility.ParseStrategy(locale: Locale(identifier: "ja_JP"))
+
+    #expect(try strategy.parse("ドラゴンスキン") == .dragonize)
+    #expect(try strategy.parse("メガソーラー") == .megaSol)
+    #expect(try strategy.parse("spicy-spray") == .spicySpray)
 }
