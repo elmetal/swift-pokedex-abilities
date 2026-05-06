@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  RoughSkin.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let roughSkin = RoughSkin.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum RoughSkin: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "rough-skin")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "さめはだ"
         default:
-            "Overgrow"
+            "Rough Skin"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "直接攻撃を受けた時、相手に相手の最大HPの1/16のダメージを与える。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "Contact with the Pokémon damages the attacker by 1/16 of its maximum HP."
         default:
             name(locale: locale)
         }

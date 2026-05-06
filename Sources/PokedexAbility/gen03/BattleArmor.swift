@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  BattleArmor.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let battleArmor = BattleArmor.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum BattleArmor: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "battle-armor")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "カブトアーマー"
         default:
-            "Overgrow"
+            "Battle Armor"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "相手の攻撃が急所に当たらない。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "The Pokémon cannot be hit by critical hits."
         default:
             name(locale: locale)
         }

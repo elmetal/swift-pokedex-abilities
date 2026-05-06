@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  KeenEye.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let keenEye = KeenEye.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum KeenEye: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "keen-eye")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "するどいめ"
         default:
-            "Overgrow"
+            "Keen Eye"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "相手に命中率を下げられない。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "Prevents other Pokémon from lowering the Pokémon's accuracy."
         default:
             name(locale: locale)
         }

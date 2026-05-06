@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  SpeedBoost.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let speedBoost = SpeedBoost.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum SpeedBoost: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "speed-boost")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "かそく"
         default:
-            "Overgrow"
+            "Speed Boost"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "毎ターン終了時、すばやさが1段階上がる。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "At the end of each turn, Speed rises by one stage."
         default:
             name(locale: locale)
         }

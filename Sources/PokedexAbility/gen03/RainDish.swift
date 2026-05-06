@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  RainDish.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let rainDish = RainDish.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum RainDish: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "rain-dish")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "あめうけざら"
         default:
-            "Overgrow"
+            "Rain Dish"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "雨の時、毎ターン終了時に最大HPの1/16回復する。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "During rain, 1/16 of maximum HP is restored at the end of each turn."
         default:
             name(locale: locale)
         }

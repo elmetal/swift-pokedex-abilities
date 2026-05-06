@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  WaterVeil.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let waterVeil = WaterVeil.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum WaterVeil: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "water-veil")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "みずのベール"
         default:
-            "Overgrow"
+            "Water Veil"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "やけど状態にならない。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "The Pokémon cannot become burned."
         default:
             name(locale: locale)
         }

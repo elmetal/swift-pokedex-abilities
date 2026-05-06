@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  Synchronize.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let synchronize = Synchronize.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum Synchronize: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "synchronize")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "シンクロ"
         default:
-            "Overgrow"
+            "Synchronize"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "相手からどく・まひ・やけどにされた時、相手も同じ状態異常にする。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "When burned, paralyzed, or poisoned by another Pokémon, the same status is inflicted on that Pokémon."
         default:
             name(locale: locale)
         }

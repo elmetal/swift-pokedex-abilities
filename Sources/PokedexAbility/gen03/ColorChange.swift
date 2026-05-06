@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  ColorChange.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let colorChange = ColorChange.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum ColorChange: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "color-change")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "へんしょく"
         default:
-            "Overgrow"
+            "Color Change"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "攻撃技を受けた後、自分のタイプが受けた技のタイプになる。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "After being hit by a damaging move, the Pokémon becomes that move's type."
         default:
             name(locale: locale)
         }

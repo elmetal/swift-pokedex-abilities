@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  LiquidOoze.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let liquidOoze = LiquidOoze.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum LiquidOoze: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "liquid-ooze")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "ヘドロえき"
         default:
-            "Overgrow"
+            "Liquid Ooze"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "HPを吸収する技を受けた時、相手は回復せず、その分のダメージを受ける。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "HP-draining moves damage the user instead of healing it."
         default:
             name(locale: locale)
         }

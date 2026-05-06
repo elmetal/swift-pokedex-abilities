@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  Plus.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let plus = Plus.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum Plus: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "plus")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "プラス"
         default:
-            "Overgrow"
+            "Plus"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "ダブルバトルで味方にマイナスがいる時、とくこうが1.5倍になる。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "In Double Battles, Special Attack is 1.5x if an ally has Minus."
         default:
             name(locale: locale)
         }

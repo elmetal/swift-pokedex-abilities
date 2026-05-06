@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  Drought.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let drought = Drought.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum Drought: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "drought")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "ひでり"
         default:
-            "Overgrow"
+            "Drought"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "登場した時、天気を永続する晴れにする。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "When the Pokémon enters battle, it makes harsh sunlight continue indefinitely."
         default:
             name(locale: locale)
         }

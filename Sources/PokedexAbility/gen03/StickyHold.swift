@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  StickyHold.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let stickyHold = StickyHold.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum StickyHold: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "sticky-hold")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "ねんちゃく"
         default:
-            "Overgrow"
+            "Sticky Hold"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "相手に持ち物を奪われたり、失ったりしない。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "The Pokémon's held item cannot be taken or removed by other Pokémon."
         default:
             name(locale: locale)
         }

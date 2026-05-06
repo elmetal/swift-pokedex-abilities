@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  Guts.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let guts = Guts.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum Guts: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "guts")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "こんじょう"
         default:
-            "Overgrow"
+            "Guts"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "状態異常の時、こうげきが1.5倍になる。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "When affected by a status condition, Attack is 1.5x."
         default:
             name(locale: locale)
         }

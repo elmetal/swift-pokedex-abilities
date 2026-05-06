@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  Chlorophyll.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let chlorophyll = Chlorophyll.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum Chlorophyll: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "chlorophyll")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "ようりょくそ"
         default:
-            "Overgrow"
+            "Chlorophyll"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "晴れの時、すばやさが2倍になる。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "During harsh sunlight, Speed is doubled."
         default:
             name(locale: locale)
         }

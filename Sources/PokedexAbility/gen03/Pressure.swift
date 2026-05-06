@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  Pressure.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let pressure = Pressure.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum Pressure: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "pressure")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "プレッシャー"
         default:
-            "Overgrow"
+            "Pressure"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "自分を対象にした相手の技のPP消費が2になる。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "Moves targeting the Pokémon use 2 PP instead of 1."
         default:
             name(locale: locale)
         }

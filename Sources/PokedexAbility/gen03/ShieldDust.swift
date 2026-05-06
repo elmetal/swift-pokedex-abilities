@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  ShieldDust.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let shieldDust = ShieldDust.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum ShieldDust: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "shield-dust")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "りんぷん"
         default:
-            "Overgrow"
+            "Shield Dust"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "攻撃技の追加効果を受けない。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "Additional effects of damaging moves are blocked."
         default:
             name(locale: locale)
         }

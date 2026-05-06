@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  EffectSpore.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let effectSpore = EffectSpore.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum EffectSpore: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "effect-spore")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "ほうし"
         default:
-            "Overgrow"
+            "Effect Spore"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "直接攻撃を受けた時、30%の確率で相手をどく・まひ・ねむりのいずれかにする。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "Contact has a 30% chance to inflict poison, paralysis, or sleep on the attacker."
         default:
             name(locale: locale)
         }

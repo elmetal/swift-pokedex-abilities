@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  ThickFat.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let thickFat = ThickFat.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum ThickFat: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "thick-fat")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "あついしぼう"
         default:
-            "Overgrow"
+            "Thick Fat"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "ほのお・こおりタイプの技で受けるダメージが半分になる。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "Damage from Fire- and Ice-type moves is halved."
         default:
             name(locale: locale)
         }

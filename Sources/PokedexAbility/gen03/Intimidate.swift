@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  Intimidate.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let intimidate = Intimidate.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum Intimidate: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "intimidate")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "いかく"
         default:
-            "Overgrow"
+            "Intimidate"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "登場した時、相手のこうげきを1段階下げる。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "When the Pokémon enters battle, opposing Pokémon's Attack falls by one stage."
         default:
             name(locale: locale)
         }

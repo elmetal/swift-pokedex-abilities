@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  FlashFire.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let flashFire = FlashFire.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum FlashFire: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "flash-fire")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "もらいび"
         default:
-            "Overgrow"
+            "Flash Fire"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "ほのおタイプの技を受けると無効化し、自分のほのおタイプの技の威力が1.5倍になる。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "Fire-type moves deal no damage and power up the Pokémon's Fire-type moves by 1.5x."
         default:
             name(locale: locale)
         }

@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  Cacophony.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let cacophony = Cacophony.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum Cacophony: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "cacophony")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "そうおん"
         default:
-            "Overgrow"
+            "Cacophony"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "第3世代に存在する未使用特性。バトル中の効果はない。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "An unused Generation III Ability. It has no effect in battle."
         default:
             name(locale: locale)
         }

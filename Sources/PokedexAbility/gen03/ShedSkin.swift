@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  ShedSkin.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let shedSkin = ShedSkin.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum ShedSkin: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "shed-skin")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "だっぴ"
         default:
-            "Overgrow"
+            "Shed Skin"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "毎ターン終了時、1/3の確率で状態異常が治る。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "At the end of each turn, there is a 1/3 chance to heal a status condition."
         default:
             name(locale: locale)
         }

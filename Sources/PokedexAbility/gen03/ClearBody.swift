@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  ClearBody.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let clearBody = ClearBody.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum ClearBody: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "clear-body")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "クリアボディ"
         default:
-            "Overgrow"
+            "Clear Body"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "相手に能力を下げられない。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "Prevents other Pokémon from lowering the Pokémon's stats."
         default:
             name(locale: locale)
         }

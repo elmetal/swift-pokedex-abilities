@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  FlameBody.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let flameBody = FlameBody.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum FlameBody: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "flame-body")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "ほのおのからだ"
         default:
-            "Overgrow"
+            "Flame Body"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "直接攻撃を受けた時、30%の確率で相手をやけど状態にする。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "Contact with the Pokémon has a 30% chance to burn the attacker."
         default:
             name(locale: locale)
         }

@@ -1,5 +1,5 @@
 //
-//  Overgrow.swift
+//  EarlyBird.swift
 //  PokedexAbility
 //
 //  Created by elmetal on 2026/05/06
@@ -9,27 +9,27 @@
 import Foundation
 
 public extension PokemonAbility {
-    static let overgrow = Overgrow.ability
+    static let earlyBird = EarlyBird.ability
 }
 
-enum Overgrow: PokemonAbilityDefinition {
-    static let ability = PokemonAbility(rawValue: "overgrow")
+enum EarlyBird: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "early-bird")
 
     static func name(locale: Locale) -> String {
         switch locale.language.languageCode {
         case .japanese:
-            "しんりょく"
+            "はやおき"
         default:
-            "Overgrow"
+            "Early Bird"
         }
     }
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
         case (.iii, .japanese):
-            "HPが1/3以下の時、くさタイプの攻撃技の威力が1.5倍になる。"
+            "ねむり状態から通常の半分のターンで目覚める。"
         case (.iii, _):
-            "When HP is 1/3 or less, Grass-type attack moves have 1.5x power."
+            "Sleep turns pass twice as quickly."
         default:
             name(locale: locale)
         }
