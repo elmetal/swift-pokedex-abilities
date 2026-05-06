@@ -1,0 +1,37 @@
+//
+//  Gluttony.swift
+//  PokedexAbility
+//
+//  Created by elmetal on 2026/05/06
+//
+//
+
+import Foundation
+
+public extension PokemonAbility {
+    static let gluttony = Gluttony.ability
+}
+
+enum Gluttony: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "gluttony")
+
+    static func name(locale: Locale) -> String {
+        switch locale.language.languageCode {
+        case .japanese:
+            "くいしんぼう"
+        default:
+            "Gluttony"
+        }
+    }
+
+    static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
+        switch (generation, locale.language.languageCode) {
+        case (.iv, .japanese):
+            "HPが1/4以下で使うきのみを、HPが1/2以下で使う。"
+        case (.iv, _):
+            "Berries normally eaten at 1/4 HP or less are eaten at 1/2 HP or less instead."
+        default:
+            name(locale: locale)
+        }
+    }
+}

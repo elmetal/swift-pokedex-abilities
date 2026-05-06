@@ -2,8 +2,8 @@ import Foundation
 import Testing
 @testable import PokedexAbility
 
-@Test func includesAllGenerationIIIAbilityDefinitions() {
-    #expect(PokemonAbilityDefinitions.all.count == 77)
+@Test func includesGenerationIIIAndIVAbilityDefinitions() {
+    #expect(PokemonAbilityDefinitions.all.count == 124)
 }
 
 @Test func formatsGenerationIIIAbilityNames() {
@@ -20,4 +20,20 @@ import Testing
     #expect(try strategy.parse("もうか") == .blaze)
     #expect(try strategy.parse("エアロック") == .airLock)
     #expect(try strategy.parse("air-lock") == .airLock)
+}
+
+@Test func formatsGenerationIVAbilityNames() {
+    let locale = Locale(identifier: "ja_JP")
+
+    #expect(PokemonAbility.adaptability.formatted(locale: locale) == "てきおうりょく")
+    #expect(PokemonAbility.magicGuard.formatted(locale: locale) == "マジックガード")
+    #expect(PokemonAbility.unburden.formatted(locale: locale) == "かるわざ")
+}
+
+@Test func parsesGenerationIVAbilityNames() throws {
+    let strategy = PokemonAbility.ParseStrategy(locale: Locale(identifier: "ja_JP"))
+
+    #expect(try strategy.parse("てきおうりょく") == .adaptability)
+    #expect(try strategy.parse("マジックガード") == .magicGuard)
+    #expect(try strategy.parse("unburden") == .unburden)
 }

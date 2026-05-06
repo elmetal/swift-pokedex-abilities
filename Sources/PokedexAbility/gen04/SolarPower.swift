@@ -1,0 +1,37 @@
+//
+//  SolarPower.swift
+//  PokedexAbility
+//
+//  Created by elmetal on 2026/05/06
+//
+//
+
+import Foundation
+
+public extension PokemonAbility {
+    static let solarPower = SolarPower.ability
+}
+
+enum SolarPower: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "solar-power")
+
+    static func name(locale: Locale) -> String {
+        switch locale.language.languageCode {
+        case .japanese:
+            "サンパワー"
+        default:
+            "Solar Power"
+        }
+    }
+
+    static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
+        switch (generation, locale.language.languageCode) {
+        case (.iv, .japanese):
+            "晴れの時、とくこうが1.5倍になり、毎ターン最大HPの1/8のダメージを受ける。"
+        case (.iv, _):
+            "During harsh sunlight, Special Attack is 1.5x and the Pokémon loses 1/8 of maximum HP each turn."
+        default:
+            name(locale: locale)
+        }
+    }
+}
