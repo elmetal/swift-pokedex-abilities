@@ -16,28 +16,37 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  DOCC_ARCHIVE: PokedexAbility.doccarchive
-  DOCC_TARGET: PokedexAbility
+  DERIVED_DATA_PATH: DerivedData
+  DOCC_SCHEME: PokedexAbility
   HOSTING_BASE_PATH: ${{ github.event.repository.name }}
+  PAGES_ARTIFACT_PATH: pages-artifact
 
 jobs:
   build:
     name: Build DocC archive
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Show Swift version
-        run: swift --version
+      - name: Show Xcode version
+        run: xcodebuild -version
 
       - name: Build DocC archive
         run: |
-          swift package --allow-writing-to-directory "$DOCC_ARCHIVE" \
-            generate-documentation \
-            --target "$DOCC_TARGET" \
-            --output-path "$DOCC_ARCHIVE" \
-            --transform-for-static-hosting \
+          xcodebuild docbuild \
+            -scheme "$DOCC_SCHEME" \
+            -destination 'generic/platform=macOS' \
+            -derivedDataPath "$DERIVED_DATA_PATH"
+
+      - name: Process DocC archive for static hosting
+        run: |
+          mkdir -p "$PAGES_ARTIFACT_PATH"
+          DOCC_ARCHIVE="$(find "$DERIVED_DATA_PATH/Build/Products" -name '*.doccarchive' -type d | head -n 1)"
+          test -n "$DOCC_ARCHIVE"
+          xcrun docc process-archive \
+            transform-for-static-hosting "$DOCC_ARCHIVE" \
+            --output-path "$PAGES_ARTIFACT_PATH" \
             --hosting-base-path "$HOSTING_BASE_PATH"
 
       - name: Configure GitHub Pages
@@ -46,7 +55,7 @@ jobs:
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          path: ${{ env.DOCC_ARCHIVE }}
+          path: ${{ env.PAGES_ARTIFACT_PATH }}
 
   deploy:
     name: Deploy to GitHub Pages
