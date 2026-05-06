@@ -1,0 +1,61 @@
+name: Deploy DocC
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  DOCC_ARCHIVE: PokedexAbility.doccarchive
+  DOCC_TARGET: PokedexAbility
+  HOSTING_BASE_PATH: ${{ github.event.repository.name }}
+
+jobs:
+  build:
+    name: Build DocC archive
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Show Swift version
+        run: swift --version
+
+      - name: Build DocC archive
+        run: |
+          swift package --allow-writing-to-directory "$DOCC_ARCHIVE" \
+            generate-documentation \
+            --target "$DOCC_TARGET" \
+            --output-path "$DOCC_ARCHIVE" \
+            --transform-for-static-hosting \
+            --hosting-base-path "$HOSTING_BASE_PATH"
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ${{ env.DOCC_ARCHIVE }}
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
