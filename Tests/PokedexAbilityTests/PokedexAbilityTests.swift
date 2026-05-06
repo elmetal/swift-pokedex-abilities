@@ -2,8 +2,8 @@ import Foundation
 import Testing
 @testable import PokedexAbility
 
-@Test func includesGenerationIIIThroughVIIAbilityDefinitions() {
-    #expect(PokemonAbilityDefinitions.all.count == 233)
+@Test func includesGenerationIIIThroughVIIIAbilityDefinitions() {
+    #expect(PokemonAbilityDefinitions.all.count == 266)
 }
 
 @Test func formatsGenerationIIIAbilityNames() {
@@ -83,4 +83,20 @@ import Testing
     #expect(try strategy.parse("バッテリー") == .battery)
     #expect(try strategy.parse("ビーストブースト") == .beastBoost)
     #expect(try strategy.parse("water-bubble") == .waterBubble)
+}
+
+@Test func formatsGenerationVIIIAbilityNames() {
+    let locale = Locale(identifier: "ja_JP")
+
+    #expect(PokemonAbility.asOne.formatted(locale: locale) == "じんばいったい")
+    #expect(PokemonAbility.intrepidSword.formatted(locale: locale) == "ふとうのけん")
+    #expect(PokemonAbility.wanderingSpirit.formatted(locale: locale) == "さまようたましい")
+}
+
+@Test func parsesGenerationVIIIAbilityNames() throws {
+    let strategy = PokemonAbility.ParseStrategy(locale: Locale(identifier: "ja_JP"))
+
+    #expect(try strategy.parse("じんばいったい") == .asOne)
+    #expect(try strategy.parse("ふとうのけん") == .intrepidSword)
+    #expect(try strategy.parse("wandering-spirit") == .wanderingSpirit)
 }
