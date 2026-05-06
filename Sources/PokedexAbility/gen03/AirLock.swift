@@ -9,6 +9,19 @@
 import Foundation
 
 public extension PokemonAbility {
+    /// The Pokémon ability known as エアロック in Japanese.
+    ///
+    /// The localized name of this ability is `"Air Lock"` in English and
+    /// `"エアロック"` in Japanese.
+    ///
+    /// Use this value when you need to refer to Air Lock by its canonical
+    /// ability identifier.
+    ///
+    /// ```swift
+    /// let ability = PokemonAbility.airLock
+    /// ```
+    ///
+    /// The ability's raw value is `"air-lock"`.
     static let airLock = AirLock.ability
 }
 
