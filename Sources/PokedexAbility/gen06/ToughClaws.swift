@@ -1,0 +1,37 @@
+//
+//  ToughClaws.swift
+//  PokedexAbility
+//
+//  Created by elmetal on 2026/05/06
+//
+//
+
+import Foundation
+
+public extension PokemonAbility {
+    static let toughClaws = ToughClaws.ability
+}
+
+enum ToughClaws: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "tough-claws")
+
+    static func name(locale: Locale) -> String {
+        switch locale.language.languageCode {
+        case .japanese:
+            "かたいツメ"
+        default:
+            "Tough Claws"
+        }
+    }
+
+    static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
+        switch (generation, locale.language.languageCode) {
+        case (.vi, .japanese):
+            "直接攻撃の技の威力が1.3倍になる。"
+        case (.vi, _):
+            "Contact moves have 1.3x power."
+        default:
+            name(locale: locale)
+        }
+    }
+}
