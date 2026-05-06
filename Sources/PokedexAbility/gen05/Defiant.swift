@@ -1,0 +1,37 @@
+//
+//  Defiant.swift
+//  PokedexAbility
+//
+//  Created by elmetal on 2026/05/06
+//
+//
+
+import Foundation
+
+public extension PokemonAbility {
+    static let defiant = Defiant.ability
+}
+
+enum Defiant: PokemonAbilityDefinition {
+    static let ability = PokemonAbility(rawValue: "defiant")
+
+    static func name(locale: Locale) -> String {
+        switch locale.language.languageCode {
+        case .japanese:
+            "まけんき"
+        default:
+            "Defiant"
+        }
+    }
+
+    static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
+        switch (generation, locale.language.languageCode) {
+        case (.v, .japanese):
+            "相手に能力を下げられた時、こうげきが2段階上がる。"
+        case (.v, _):
+            "When another Pokémon lowers one of this Pokémon's stats, Attack rises by two stages."
+        default:
+            name(locale: locale)
+        }
+    }
+}
