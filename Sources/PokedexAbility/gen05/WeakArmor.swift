@@ -39,9 +39,9 @@ enum WeakArmor: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "物理技を受けた時、ぼうぎょが1段階下がり、すばやさが1段階上がる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "When hit by a physical move, Defense falls by one stage and Speed rises by one stage."
         default:
             name(locale: locale)

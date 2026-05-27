@@ -39,9 +39,9 @@ enum FriendGuard: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "味方が攻撃技で受けるダメージが0.75倍になる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "Allies take 0.75x damage from attacks."
         default:
             name(locale: locale)

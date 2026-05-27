@@ -39,9 +39,9 @@ enum AsOne: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "きんちょうかんと、しろのいななきまたはくろのいななきの効果をあわせ持つ。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "Combines Unnerve with Chilling Neigh or Grim Neigh."
         default:
             name(locale: locale)

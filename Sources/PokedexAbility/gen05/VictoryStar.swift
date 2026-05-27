@@ -39,9 +39,9 @@ enum VictoryStar: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "自分と味方の技の命中率が1.1倍になる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "The accuracy of the Pokémon and its allies is 1.1x."
         default:
             name(locale: locale)

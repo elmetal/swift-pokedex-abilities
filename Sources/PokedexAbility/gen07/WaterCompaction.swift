@@ -39,9 +39,9 @@ enum WaterCompaction: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "みずタイプの技を受けると、ぼうぎょが2段階上がる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "When hit by a Water-type move, Defense rises by two stages."
         default:
             name(locale: locale)

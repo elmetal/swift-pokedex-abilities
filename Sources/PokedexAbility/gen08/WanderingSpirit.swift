@@ -39,9 +39,9 @@ enum WanderingSpirit: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "直接攻撃を受けた時、相手と特性を入れ替える。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "Contact with the Pokémon swaps Abilities with the attacker."
         default:
             name(locale: locale)

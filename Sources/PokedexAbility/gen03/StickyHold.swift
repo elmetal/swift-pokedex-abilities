@@ -39,9 +39,9 @@ enum StickyHold: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "相手に持ち物を奪われたり、失ったりしない。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "The Pokémon's held item cannot be taken or removed by other Pokémon."
         default:
             name(locale: locale)

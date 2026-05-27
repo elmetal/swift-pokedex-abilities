@@ -39,9 +39,9 @@ enum IronBarbs: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "直接攻撃を受けた時、相手に相手の最大HPの1/8のダメージを与える。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "Contact with the Pokémon damages the attacker by 1/8 of its maximum HP."
         default:
             name(locale: locale)

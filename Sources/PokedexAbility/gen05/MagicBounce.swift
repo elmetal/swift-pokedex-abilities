@@ -39,9 +39,9 @@ enum MagicBounce: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "受けた変化技を相手に跳ね返す。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "Status moves used against the Pokémon are reflected back to the user."
         default:
             name(locale: locale)

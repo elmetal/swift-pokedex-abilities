@@ -39,9 +39,9 @@ enum ShellArmor: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "相手の攻撃が急所に当たらない。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "The Pokémon cannot be hit by critical hits."
         default:
             name(locale: locale)

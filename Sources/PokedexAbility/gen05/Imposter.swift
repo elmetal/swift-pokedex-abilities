@@ -39,9 +39,9 @@ enum Imposter: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "登場した時、目の前の相手に変身する。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "When the Pokémon enters battle, it transforms into the opposing Pokémon."
         default:
             name(locale: locale)

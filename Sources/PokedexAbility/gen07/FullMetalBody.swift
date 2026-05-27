@@ -39,9 +39,9 @@ enum FullMetalBody: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "相手に能力を下げられない。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "Prevents other Pokémon from lowering the Pokémon's stats."
         default:
             name(locale: locale)

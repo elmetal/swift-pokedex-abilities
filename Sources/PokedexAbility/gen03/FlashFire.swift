@@ -39,9 +39,9 @@ enum FlashFire: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "ほのおタイプの技を受けると無効化し、自分のほのおタイプの技の威力が1.5倍になる。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "Fire-type moves deal no damage and power up the Pokémon's Fire-type moves by 1.5x."
         default:
             name(locale: locale)

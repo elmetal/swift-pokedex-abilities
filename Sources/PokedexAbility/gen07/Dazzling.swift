@@ -39,9 +39,9 @@ enum Dazzling: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "相手は自分や味方に先制技を出せない。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "Opposing Pokémon cannot use priority moves against the Pokémon or its allies."
         default:
             name(locale: locale)

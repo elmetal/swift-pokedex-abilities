@@ -39,9 +39,9 @@ enum Klutz: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "持っている道具の効果を使えない。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "The Pokémon cannot use the effects of its held item."
         default:
             name(locale: locale)

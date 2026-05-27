@@ -39,9 +39,9 @@ enum Drought: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "登場した時、天気を永続する晴れにする。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "When the Pokémon enters battle, it makes harsh sunlight continue indefinitely."
         default:
             name(locale: locale)

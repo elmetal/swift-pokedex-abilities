@@ -39,9 +39,9 @@ enum Bulletproof: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "弾や爆弾に関係する技を受けない。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "Ball and bomb moves have no effect on the Pokémon."
         default:
             name(locale: locale)

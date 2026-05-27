@@ -39,9 +39,9 @@ enum Turboblaze: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "攻撃する時、相手の特性の影響を受けずに技を出せる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "The Pokémon's moves ignore the target's Ability when attacking."
         default:
             name(locale: locale)

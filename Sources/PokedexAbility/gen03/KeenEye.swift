@@ -39,9 +39,9 @@ enum KeenEye: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "相手に命中率を下げられない。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "Prevents other Pokémon from lowering the Pokémon's accuracy."
         default:
             name(locale: locale)

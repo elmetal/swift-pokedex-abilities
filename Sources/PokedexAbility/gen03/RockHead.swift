@@ -39,9 +39,9 @@ enum RockHead: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "自分の技の反動ダメージを受けない。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "The Pokémon does not take recoil damage from its moves."
         default:
             name(locale: locale)

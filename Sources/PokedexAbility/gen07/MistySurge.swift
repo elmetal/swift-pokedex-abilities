@@ -39,9 +39,9 @@ enum MistySurge: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "登場した時、場をミストフィールドにする。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "When the Pokémon enters battle, it creates Misty Terrain."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum TintedLens: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "効果がいまひとつの技で与えるダメージが2倍になる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "Not very effective moves deal double damage."
         default:
             name(locale: locale)

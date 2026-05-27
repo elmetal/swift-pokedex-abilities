@@ -39,9 +39,9 @@ enum BadDreams: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "ねむり状態の相手は毎ターン終了時に最大HPの1/8のダメージを受ける。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "Sleeping opposing Pokémon lose 1/8 of their maximum HP at the end of each turn."
         default:
             name(locale: locale)

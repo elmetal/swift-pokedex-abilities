@@ -39,9 +39,9 @@ enum Merciless: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "どく状態の相手に攻撃すると必ず急所に当たる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "Attacks against poisoned targets always become critical hits."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum CursedBody: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "攻撃を受けた時、30%の確率で相手のその技をかなしばり状態にする。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "When hit by a move, there is a 30% chance to disable that move."
         default:
             name(locale: locale)

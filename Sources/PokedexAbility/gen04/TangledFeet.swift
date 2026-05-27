@@ -39,9 +39,9 @@ enum TangledFeet: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "こんらん状態の時、回避率が2倍になる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "When confused, evasion is doubled."
         default:
             name(locale: locale)

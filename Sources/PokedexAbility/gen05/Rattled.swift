@@ -39,9 +39,9 @@ enum Rattled: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "むし・ゴースト・あくタイプの技を受けた時、すばやさが1段階上がる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "When hit by a Bug-, Ghost-, or Dark-type move, Speed rises by one stage."
         default:
             name(locale: locale)

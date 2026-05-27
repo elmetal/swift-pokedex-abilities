@@ -39,9 +39,9 @@ enum MagicGuard: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "直接攻撃以外ではダメージを受けない。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "The Pokémon takes damage only from direct attacks."
         default:
             name(locale: locale)

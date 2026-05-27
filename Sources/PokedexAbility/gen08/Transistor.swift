@@ -39,9 +39,9 @@ enum Transistor: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "でんきタイプの技の威力が1.5倍になる。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "Electric-type moves have 1.5x power."
         default:
             name(locale: locale)

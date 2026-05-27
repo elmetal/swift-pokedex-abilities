@@ -39,9 +39,9 @@ enum Harvest: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "毎ターン終了時、50%の確率で使ったきのみを復活させる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "At the end of each turn, there is a 50% chance to restore a consumed Berry."
         default:
             name(locale: locale)

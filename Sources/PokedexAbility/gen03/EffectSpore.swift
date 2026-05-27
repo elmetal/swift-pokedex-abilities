@@ -39,9 +39,9 @@ enum EffectSpore: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "直接攻撃を受けた時、30%の確率で相手をどく・まひ・ねむりのいずれかにする。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "Contact has a 30% chance to inflict poison, paralysis, or sleep on the attacker."
         default:
             name(locale: locale)

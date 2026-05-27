@@ -39,9 +39,9 @@ enum PunkRock: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "音に関係する技の威力が1.3倍になり、音に関係する技で受けるダメージが半分になる。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "Sound-based moves used by the Pokémon have 1.3x power, and sound-based damage taken is halved."
         default:
             name(locale: locale)

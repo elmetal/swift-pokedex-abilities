@@ -39,9 +39,9 @@ enum TanglingHair: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "直接攻撃を受けた時、相手のすばやさを1段階下げる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "Contact with the Pokémon lowers the attacker's Speed by one stage."
         default:
             name(locale: locale)

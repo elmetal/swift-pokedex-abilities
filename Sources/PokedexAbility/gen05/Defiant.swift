@@ -39,9 +39,9 @@ enum Defiant: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "相手に能力を下げられた時、こうげきが2段階上がる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "When another Pokémon lowers one of this Pokémon's stats, Attack rises by two stages."
         default:
             name(locale: locale)

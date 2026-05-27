@@ -39,9 +39,9 @@ enum AngerPoint: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "急所に当たる攻撃を受けた時、こうげきが最大まで上がる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "When the Pokémon is hit by a critical hit, its Attack rises to the maximum stage."
         default:
             name(locale: locale)

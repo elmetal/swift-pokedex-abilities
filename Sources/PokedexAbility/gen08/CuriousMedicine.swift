@@ -39,9 +39,9 @@ enum CuriousMedicine: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "登場した時、味方の能力ランクの変化を元に戻す。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "When the Pokémon enters battle, allies' stat changes are reset."
         default:
             name(locale: locale)

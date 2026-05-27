@@ -39,9 +39,9 @@ enum SnowCloak: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "あられの時、回避率が1.25倍になり、あられのダメージを受けない。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "During hail, evasion is 1.25x and hail damage is prevented."
         default:
             name(locale: locale)

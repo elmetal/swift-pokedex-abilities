@@ -39,9 +39,9 @@ enum Trace: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "登場した時、相手の特性をコピーする。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "When the Pokémon enters battle, it copies an opposing Pokémon's Ability."
         default:
             name(locale: locale)

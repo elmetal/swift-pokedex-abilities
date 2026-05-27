@@ -39,9 +39,9 @@ enum ScreenCleaner: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "登場した時、場の壁の効果を消す。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "When the Pokémon enters battle, barriers on both sides are removed."
         default:
             name(locale: locale)

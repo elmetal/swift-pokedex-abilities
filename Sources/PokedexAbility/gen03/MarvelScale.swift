@@ -39,9 +39,9 @@ enum MarvelScale: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "状態異常の時、ぼうぎょが1.5倍になる。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "When affected by a status condition, Defense is 1.5x."
         default:
             name(locale: locale)

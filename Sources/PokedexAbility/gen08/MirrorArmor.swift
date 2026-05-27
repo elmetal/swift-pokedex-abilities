@@ -39,9 +39,9 @@ enum MirrorArmor: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "相手から受けた能力を下げる効果を跳ね返す。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "Stat-lowering effects from other Pokémon are reflected back."
         default:
             name(locale: locale)

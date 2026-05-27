@@ -39,9 +39,9 @@ enum HoneyGather: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "戦闘後、あまいミツを拾ってくることがある。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "After battle, the Pokémon may pick up Honey."
         default:
             name(locale: locale)

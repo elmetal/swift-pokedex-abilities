@@ -39,9 +39,9 @@ enum StanceChange: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "ギルガルドが使う技に応じて姿を変える。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "Aegislash changes form depending on the moves it uses."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum Berserk: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "攻撃でHPが半分以下になると、とくこうが1段階上がる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "When HP drops to half or less from an attack, Special Attack rises by one stage."
         default:
             name(locale: locale)

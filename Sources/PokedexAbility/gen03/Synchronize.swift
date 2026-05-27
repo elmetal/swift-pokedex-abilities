@@ -39,9 +39,9 @@ enum Synchronize: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "相手からどく・まひ・やけどにされた時、相手も同じ状態異常にする。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "When burned, paralyzed, or poisoned by another Pokémon, the same status is inflicted on that Pokémon."
         default:
             name(locale: locale)

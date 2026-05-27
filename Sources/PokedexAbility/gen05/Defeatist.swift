@@ -39,9 +39,9 @@ enum Defeatist: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "HPが半分以下の時、こうげきととくこうが半分になる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "When HP is half or less, Attack and Special Attack are halved."
         default:
             name(locale: locale)

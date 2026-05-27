@@ -39,9 +39,9 @@ enum Ripen: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "きのみの効果が2倍になる。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "The effects of Berries are doubled."
         default:
             name(locale: locale)

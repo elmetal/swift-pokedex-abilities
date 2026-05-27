@@ -39,9 +39,9 @@ enum SnowWarning: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "登場した時、天気を永続するあられにする。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "When the Pokémon enters battle, it makes hail continue indefinitely."
         default:
             name(locale: locale)

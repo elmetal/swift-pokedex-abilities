@@ -39,9 +39,9 @@ enum MagmaArmor: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "こおり状態にならない。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "The Pokémon cannot become frozen."
         default:
             name(locale: locale)

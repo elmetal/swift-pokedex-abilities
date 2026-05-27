@@ -39,9 +39,9 @@ enum SereneGrace: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "自分の技の追加効果の発生率が2倍になる。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "Additional effect chances of the Pokémon's moves are doubled."
         default:
             name(locale: locale)

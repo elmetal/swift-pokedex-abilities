@@ -39,9 +39,9 @@ enum PastelVeil: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "自分と味方はどく・もうどく状態にならない。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "The Pokémon and its allies cannot be poisoned."
         default:
             name(locale: locale)

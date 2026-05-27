@@ -39,9 +39,9 @@ enum DesolateLand: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "みずタイプの攻撃技を無効化する強い晴れにする。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "Creates extremely harsh sunlight that nullifies Water-type attacks."
         default:
             name(locale: locale)

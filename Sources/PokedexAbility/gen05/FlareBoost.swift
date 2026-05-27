@@ -39,9 +39,9 @@ enum FlareBoost: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "やけど状態の時、とくこうが1.5倍になる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "When burned, Special Attack is 1.5x."
         default:
             name(locale: locale)

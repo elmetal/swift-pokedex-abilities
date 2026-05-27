@@ -39,9 +39,9 @@ enum Infiltrator: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "相手の壁や守りの効果をすり抜けて技を出せる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "The Pokémon's moves bypass the target's barriers and safeguards."
         default:
             name(locale: locale)

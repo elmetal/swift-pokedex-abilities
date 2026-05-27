@@ -39,9 +39,9 @@ enum FairyAura: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "すべてのポケモンのフェアリータイプの技の威力が1.33倍になる。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "Fairy-type moves used by any Pokémon have 1.33x power."
         default:
             name(locale: locale)

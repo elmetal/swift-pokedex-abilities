@@ -39,9 +39,9 @@ enum RoughSkin: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "直接攻撃を受けた時、相手に相手の最大HPの1/16のダメージを与える。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "Contact with the Pokémon damages the attacker by 1/16 of its maximum HP."
         default:
             name(locale: locale)

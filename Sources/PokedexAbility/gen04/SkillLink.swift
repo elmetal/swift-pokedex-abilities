@@ -39,9 +39,9 @@ enum SkillLink: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "連続攻撃技が必ず5回当たる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "Variable-hit multi-strike moves always hit five times."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum Comatose: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "常にねむり状態として扱われるが、ねむりによる行動不能にはならない。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "The Pokémon is always treated as asleep without being affected by sleep's restrictions."
         default:
             name(locale: locale)

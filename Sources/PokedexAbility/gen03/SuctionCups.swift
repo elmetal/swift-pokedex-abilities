@@ -39,9 +39,9 @@ enum SuctionCups: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "相手の技や道具で強制的に交代させられない。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "The Pokémon cannot be forced to switch out."
         default:
             name(locale: locale)

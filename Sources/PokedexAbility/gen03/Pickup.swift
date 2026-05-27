@@ -39,9 +39,9 @@ enum Pickup: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "戦闘後、道具を持っていない時に道具を拾ってくることがある。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "After battle, the Pokémon may pick up an item if it is not holding one."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum LightningRod: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "ダブルバトルで、単体を対象にするでんきタイプの技を自分に引き寄せる。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "In Double Battles, single-target Electric-type moves are redirected to the Pokémon."
         default:
             name(locale: locale)

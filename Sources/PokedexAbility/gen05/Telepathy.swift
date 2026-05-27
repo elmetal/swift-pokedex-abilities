@@ -39,9 +39,9 @@ enum Telepathy: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "味方の攻撃技でダメージを受けない。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "The Pokémon avoids damage from allies' moves."
         default:
             name(locale: locale)

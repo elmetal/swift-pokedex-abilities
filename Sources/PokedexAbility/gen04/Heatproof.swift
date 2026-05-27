@@ -39,9 +39,9 @@ enum Heatproof: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "ほのおタイプの技で受けるダメージと、やけどのダメージが半分になる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "Damage from Fire-type moves and burn damage are halved."
         default:
             name(locale: locale)

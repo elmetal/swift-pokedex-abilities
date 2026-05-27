@@ -39,9 +39,9 @@ enum MoldBreaker: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "攻撃する時、相手の特性の影響を受けずに技を出せる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "The Pokémon's moves ignore the target's Ability when attacking."
         default:
             name(locale: locale)

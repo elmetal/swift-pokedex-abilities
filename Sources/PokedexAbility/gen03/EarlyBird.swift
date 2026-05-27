@@ -39,9 +39,9 @@ enum EarlyBird: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "ねむり状態から通常の半分のターンで目覚める。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "Sleep turns pass twice as quickly."
         default:
             name(locale: locale)

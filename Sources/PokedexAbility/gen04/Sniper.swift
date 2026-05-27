@@ -39,9 +39,9 @@ enum Sniper: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "急所に当たった時のダメージが1.5倍になる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "Critical hits deal 1.5x more damage."
         default:
             name(locale: locale)

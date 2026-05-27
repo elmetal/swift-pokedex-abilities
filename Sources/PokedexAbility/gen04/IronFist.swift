@@ -39,9 +39,9 @@ enum IronFist: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "パンチ系の技の威力が1.2倍になる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "Punching moves have 1.2x power."
         default:
             name(locale: locale)

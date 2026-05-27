@@ -39,9 +39,9 @@ enum ShadowShield: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "HPが満タンの時、攻撃技で受けるダメージが半分になる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "When HP is full, damage taken from attacks is halved."
         default:
             name(locale: locale)

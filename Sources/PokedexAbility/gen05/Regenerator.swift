@@ -39,9 +39,9 @@ enum Regenerator: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "交代すると最大HPの1/3回復する。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "When the Pokémon switches out, it restores 1/3 of its maximum HP."
         default:
             name(locale: locale)

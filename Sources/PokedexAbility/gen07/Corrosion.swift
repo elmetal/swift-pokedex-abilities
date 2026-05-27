@@ -39,9 +39,9 @@ enum Corrosion: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "はがね・どくタイプのポケモンもどく状態にできる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "The Pokémon can poison Steel- and Poison-type Pokémon."
         default:
             name(locale: locale)

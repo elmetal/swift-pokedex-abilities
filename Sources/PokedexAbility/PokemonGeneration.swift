@@ -6,7 +6,7 @@
 //
 //
 
-public enum PokemonGeneration: Int, Hashable, Codable, Sendable {
+public enum PokemonGeneration: Int, Hashable, Codable, Sendable, Comparable {
     case iii = 3
     case iv = 4
     case v = 5
@@ -18,4 +18,8 @@ public enum PokemonGeneration: Int, Hashable, Codable, Sendable {
     case champions = -1
     
     public static var latest: Self { .ix }
+
+    public static func < (lhs: Self, rhs: Self) -> Bool {
+        lhs.rawValue < rhs.rawValue
+    }
 }

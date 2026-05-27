@@ -39,9 +39,9 @@ enum QuickFeet: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "状態異常の時、すばやさが1.5倍になる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "When affected by a status condition, Speed is 1.5x."
         default:
             name(locale: locale)

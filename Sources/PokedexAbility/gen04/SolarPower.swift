@@ -39,9 +39,9 @@ enum SolarPower: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "晴れの時、とくこうが1.5倍になり、毎ターン最大HPの1/8のダメージを受ける。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "During harsh sunlight, Special Attack is 1.5x and the Pokémon loses 1/8 of maximum HP each turn."
         default:
             name(locale: locale)

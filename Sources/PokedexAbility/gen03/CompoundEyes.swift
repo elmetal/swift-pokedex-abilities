@@ -39,9 +39,9 @@ enum CompoundEyes: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "技の命中率が1.3倍になる。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "Move accuracy is 1.3x."
         default:
             name(locale: locale)

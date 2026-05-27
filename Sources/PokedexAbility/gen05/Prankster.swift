@@ -39,9 +39,9 @@ enum Prankster: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "変化技の優先度が1上がる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "Status moves have their priority increased by one."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum Symbiosis: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "味方が道具を使うと、自分の持っている道具を渡す。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "When an ally consumes its held item, the Pokémon gives that ally its held item."
         default:
             name(locale: locale)

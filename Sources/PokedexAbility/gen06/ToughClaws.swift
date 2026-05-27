@@ -39,9 +39,9 @@ enum ToughClaws: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "直接攻撃の技の威力が1.3倍になる。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "Contact moves have 1.3x power."
         default:
             name(locale: locale)

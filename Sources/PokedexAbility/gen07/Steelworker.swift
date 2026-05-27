@@ -39,9 +39,9 @@ enum Steelworker: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "はがねタイプの技の威力が1.5倍になる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "Steel-type moves have 1.5x power."
         default:
             name(locale: locale)

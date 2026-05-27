@@ -39,9 +39,9 @@ enum StrongJaw: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "あごやキバでかみつく技の威力が1.5倍になる。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "Biting moves have 1.5x power."
         default:
             name(locale: locale)

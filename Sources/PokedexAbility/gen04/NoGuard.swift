@@ -39,9 +39,9 @@ enum NoGuard: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "自分と相手の使う技が必ず命中する。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "All moves used by or against the Pokémon hit."
         default:
             name(locale: locale)

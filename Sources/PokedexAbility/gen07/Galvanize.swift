@@ -39,9 +39,9 @@ enum Galvanize: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "ノーマルタイプの技がでんきタイプになり、威力が1.2倍になる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "Normal-type moves become Electric-type moves and have 1.2x power."
         default:
             name(locale: locale)

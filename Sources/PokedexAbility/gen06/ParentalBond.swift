@@ -39,9 +39,9 @@ enum ParentalBond: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "攻撃技が2回当たり、2回目のダメージは下がる。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "The Pokémon's moves hit twice, with the second hit dealing reduced damage."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum SweetVeil: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "自分と味方はねむり状態にならない。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "The Pokémon and its allies cannot fall asleep."
         default:
             name(locale: locale)

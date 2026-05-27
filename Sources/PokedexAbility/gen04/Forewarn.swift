@@ -39,9 +39,9 @@ enum Forewarn: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "登場した時、相手の技のうち威力が最も高い技の1つを知る。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "When the Pokémon enters battle, it reveals one of an opposing Pokémon's moves with the highest power."
         default:
             name(locale: locale)

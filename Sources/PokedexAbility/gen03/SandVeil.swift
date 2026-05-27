@@ -39,9 +39,9 @@ enum SandVeil: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "すなあらしの時、回避率が1.25倍になり、すなあらしのダメージを受けない。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "During a sandstorm, evasion is 1.25x and sandstorm damage is prevented."
         default:
             name(locale: locale)

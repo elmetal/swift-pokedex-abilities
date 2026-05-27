@@ -39,9 +39,9 @@ enum Plus: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "ダブルバトルで味方にマイナスがいる時、とくこうが1.5倍になる。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "In Double Battles, Special Attack is 1.5x if an ally has Minus."
         default:
             name(locale: locale)

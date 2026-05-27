@@ -39,9 +39,9 @@ enum CheekPouch: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "きのみを食べると、さらに最大HPの1/3回復する。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "When the Pokémon eats a Berry, it also restores 1/3 of its maximum HP."
         default:
             name(locale: locale)

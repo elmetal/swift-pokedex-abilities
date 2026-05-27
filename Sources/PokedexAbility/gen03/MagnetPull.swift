@@ -39,9 +39,9 @@ enum MagnetPull: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "相手のはがねタイプのポケモンは逃げたり交代したりできない。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "Steel-type opposing Pokémon cannot flee or switch out."
         default:
             name(locale: locale)

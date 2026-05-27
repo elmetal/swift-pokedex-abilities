@@ -39,9 +39,9 @@ enum Illuminate: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "手持ちの先頭にいると、野生ポケモンと出会いやすくなる。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "When the Pokémon leads the party, wild Pokémon are more likely to appear."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum NeutralizingGas: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "場にいる間、他のポケモンの特性の効果を消す。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "While the Pokémon is in battle, other Pokémon's Abilities are suppressed."
         default:
             name(locale: locale)

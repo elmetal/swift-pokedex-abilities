@@ -39,9 +39,9 @@ enum BallFetch: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "道具を持っていない時、捕獲に失敗した最初のボールを拾ってくる。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "If the Pokémon is not holding an item, it picks up the first failed Poké Ball thrown in battle."
         default:
             name(locale: locale)

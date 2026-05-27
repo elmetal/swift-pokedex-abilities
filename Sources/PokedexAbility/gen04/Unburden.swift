@@ -39,9 +39,9 @@ enum Unburden: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "持っていた道具がなくなると、すばやさが2倍になる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "After the Pokémon loses or uses its held item, Speed is doubled."
         default:
             name(locale: locale)

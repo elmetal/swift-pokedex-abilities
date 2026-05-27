@@ -39,9 +39,9 @@ enum SheerForce: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "追加効果がある技の威力が1.3倍になるが、追加効果は発生しない。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "Moves with additional effects have 1.3x power, but their additional effects are removed."
         default:
             name(locale: locale)

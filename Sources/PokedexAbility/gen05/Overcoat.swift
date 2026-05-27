@@ -39,9 +39,9 @@ enum Overcoat: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "天気によるダメージを受けない。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "The Pokémon takes no damage from weather."
         default:
             name(locale: locale)

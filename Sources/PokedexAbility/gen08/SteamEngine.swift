@@ -39,9 +39,9 @@ enum SteamEngine: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "ほのお・みずタイプの技を受けると、すばやさが6段階上がる。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "When hit by a Fire- or Water-type move, Speed rises by six stages."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum FlameBody: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "直接攻撃を受けた時、30%の確率で相手をやけど状態にする。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "Contact with the Pokémon has a 30% chance to burn the attacker."
         default:
             name(locale: locale)

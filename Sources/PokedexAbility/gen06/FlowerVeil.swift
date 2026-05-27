@@ -39,9 +39,9 @@ enum FlowerVeil: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "味方のくさタイプのポケモンは能力を下げられず、状態異常にならない。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "Allied Grass-type Pokémon cannot have their stats lowered or be affected by status conditions."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum HyperCutter: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "相手にこうげきを下げられない。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "Prevents other Pokémon from lowering the Pokémon's Attack."
         default:
             name(locale: locale)

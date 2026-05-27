@@ -39,9 +39,9 @@ enum ShieldsDown: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "メテノはHPが半分より多い時、殻にこもった姿になり状態異常にならない。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "Minior changes form and is protected from status conditions while its HP is above half."
         default:
             name(locale: locale)

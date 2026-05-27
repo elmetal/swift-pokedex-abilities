@@ -39,9 +39,9 @@ enum LongReach: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "直接攻撃の技を使っても接触しない。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "The Pokémon uses moves without making contact."
         default:
             name(locale: locale)

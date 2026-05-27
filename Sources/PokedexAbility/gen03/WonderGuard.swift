@@ -39,9 +39,9 @@ enum WonderGuard: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "効果抜群の攻撃技以外ではダメージを受けない。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "Only super-effective damaging moves can hit the Pokémon."
         default:
             name(locale: locale)

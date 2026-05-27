@@ -39,9 +39,9 @@ enum Chlorophyll: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "晴れの時、すばやさが2倍になる。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "During harsh sunlight, Speed is doubled."
         default:
             name(locale: locale)

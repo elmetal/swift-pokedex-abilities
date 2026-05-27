@@ -39,9 +39,9 @@ enum RKSSystem: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "持っているメモリに応じてタイプが変わる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "The Pokémon's type changes according to the memory it holds."
         default:
             name(locale: locale)

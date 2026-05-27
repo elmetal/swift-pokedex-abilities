@@ -39,9 +39,9 @@ enum AromaVeil: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "自分と味方はメンタル系の技を受けない。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "Protects the Pokémon and its allies from mental status moves."
         default:
             name(locale: locale)

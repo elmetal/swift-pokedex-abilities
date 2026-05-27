@@ -39,9 +39,9 @@ enum Moody: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "毎ターン終了時、どれか1つの能力が2段階上がり、別の能力が1段階下がる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "At the end of each turn, one stat rises by two stages and another stat falls by one stage."
         default:
             name(locale: locale)

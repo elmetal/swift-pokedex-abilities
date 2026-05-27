@@ -39,9 +39,9 @@ enum Analytic: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "自分が相手より後に行動する時、技の威力が1.3倍になる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "If the Pokémon moves after its target, its move has 1.3x power."
         default:
             name(locale: locale)

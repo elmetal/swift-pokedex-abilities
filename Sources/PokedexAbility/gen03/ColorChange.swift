@@ -39,9 +39,9 @@ enum ColorChange: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "攻撃技を受けた後、自分のタイプが受けた技のタイプになる。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "After being hit by a damaging move, the Pokémon becomes that move's type."
         default:
             name(locale: locale)

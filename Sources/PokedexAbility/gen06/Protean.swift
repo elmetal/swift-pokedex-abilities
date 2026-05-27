@@ -39,9 +39,9 @@ enum Protean: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "技を使う前に、自分のタイプがその技と同じタイプになる。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "Before the Pokémon uses a move, it changes to that move's type."
         default:
             name(locale: locale)

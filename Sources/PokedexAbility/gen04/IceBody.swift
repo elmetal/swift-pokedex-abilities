@@ -39,9 +39,9 @@ enum IceBody: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "あられの時、毎ターン終了時に最大HPの1/16回復する。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "During hail, 1/16 of maximum HP is restored at the end of each turn."
         default:
             name(locale: locale)

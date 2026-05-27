@@ -39,9 +39,9 @@ enum AuraBreak: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "オーラの特性の効果を逆にする。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "The effects of aura Abilities are reversed."
         default:
             name(locale: locale)

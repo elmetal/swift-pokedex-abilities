@@ -39,9 +39,9 @@ enum CottonDown: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "攻撃を受けると、自分以外のポケモンのすばやさを1段階下げる。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "When hit by an attack, the Speed of all other Pokémon falls by one stage."
         default:
             name(locale: locale)

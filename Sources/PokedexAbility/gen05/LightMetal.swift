@@ -39,9 +39,9 @@ enum LightMetal: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "自分の重さが半分になる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "The Pokémon's weight is halved."
         default:
             name(locale: locale)

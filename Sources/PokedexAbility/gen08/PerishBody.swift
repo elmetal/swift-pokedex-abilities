@@ -39,9 +39,9 @@ enum PerishBody: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "直接攻撃を受けると、お互いに3ターン後にひんしになる。交代すると解除される。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "When hit by a contact move, both Pokémon faint after three turns unless they switch out."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum Neuroforce: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "効果抜群の技で与えるダメージが1.25倍になる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "Super-effective attacks deal 1.25x damage."
         default:
             name(locale: locale)

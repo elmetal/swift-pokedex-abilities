@@ -39,9 +39,9 @@ enum HugePower: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "こうげきが2倍になる。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "Attack is doubled."
         default:
             name(locale: locale)

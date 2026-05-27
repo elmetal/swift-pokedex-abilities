@@ -39,9 +39,9 @@ enum SlowStart: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "登場してから5ターンの間、こうげきとすばやさが半分になる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "For five turns after entering battle, Attack and Speed are halved."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum Scrappy: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "ノーマル・かくとうタイプの技がゴーストタイプに当たる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "Normal- and Fighting-type moves can hit Ghost-type Pokémon."
         default:
             name(locale: locale)

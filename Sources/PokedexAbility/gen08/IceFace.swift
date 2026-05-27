@@ -39,9 +39,9 @@ enum IceFace: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "アイスフェイスで物理技を1回防ぎ、姿が変わる。あられでアイスフェイスに戻る。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "The ice head blocks one physical attack, then the Pokémon changes form. Hail restores the ice head."
         default:
             name(locale: locale)

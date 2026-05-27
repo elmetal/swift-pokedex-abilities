@@ -39,9 +39,9 @@ enum Healer: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "毎ターン終了時、30%の確率で隣の味方の状態異常を治す。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "At the end of each turn, there is a 30% chance to heal an adjacent ally's status condition."
         default:
             name(locale: locale)

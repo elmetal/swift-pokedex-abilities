@@ -39,9 +39,9 @@ enum Refrigerate: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "ノーマルタイプの技がこおりタイプになり、威力が1.3倍になる。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "Normal-type moves become Ice-type moves and have 1.3x power."
         default:
             name(locale: locale)

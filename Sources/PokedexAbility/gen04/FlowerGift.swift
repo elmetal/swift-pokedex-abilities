@@ -39,9 +39,9 @@ enum FlowerGift: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "晴れの時、自分と味方のこうげき・とくぼうが1.5倍になる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "During harsh sunlight, the Pokémon and its allies have 1.5x Attack and Special Defense."
         default:
             name(locale: locale)

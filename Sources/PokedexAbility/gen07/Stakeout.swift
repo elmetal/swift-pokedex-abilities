@@ -39,9 +39,9 @@ enum Stakeout: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "交代して出てきた相手に与えるダメージが2倍になる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "Damage is doubled against targets that switched in this turn."
         default:
             name(locale: locale)

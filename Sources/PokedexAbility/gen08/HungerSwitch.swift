@@ -39,9 +39,9 @@ enum HungerSwitch: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "毎ターン終了時、モルペコがまんぷくもようとはらぺこもようを切り替える。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "At the end of each turn, Morpeko changes between Full Belly Mode and Hangry Mode."
         default:
             name(locale: locale)

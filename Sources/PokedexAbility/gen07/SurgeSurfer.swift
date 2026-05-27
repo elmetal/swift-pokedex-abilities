@@ -39,9 +39,9 @@ enum SurgeSurfer: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "エレキフィールドの時、すばやさが2倍になる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "During Electric Terrain, Speed is doubled."
         default:
             name(locale: locale)

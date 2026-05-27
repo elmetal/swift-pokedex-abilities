@@ -39,9 +39,9 @@ enum IceScales: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "特殊技で受けるダメージが半分になる。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "Damage from special moves is halved."
         default:
             name(locale: locale)

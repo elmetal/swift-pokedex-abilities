@@ -39,9 +39,9 @@ enum Limber: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "まひ状態にならない。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "The Pokémon cannot become paralyzed."
         default:
             name(locale: locale)

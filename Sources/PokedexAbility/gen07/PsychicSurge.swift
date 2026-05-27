@@ -39,9 +39,9 @@ enum PsychicSurge: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "登場した時、場をサイコフィールドにする。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "When the Pokémon enters battle, it creates Psychic Terrain."
         default:
             name(locale: locale)

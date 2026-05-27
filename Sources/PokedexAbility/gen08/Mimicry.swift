@@ -39,9 +39,9 @@ enum Mimicry: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "フィールドに応じて自分のタイプが変わる。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "The Pokémon's type changes according to the terrain."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum LeafGuard: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "晴れの時、状態異常にならない。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "During harsh sunlight, the Pokémon cannot be affected by status conditions."
         default:
             name(locale: locale)

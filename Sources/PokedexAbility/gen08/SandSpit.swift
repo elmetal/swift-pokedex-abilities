@@ -39,9 +39,9 @@ enum SandSpit: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "攻撃を受けると、天気をすなあらしにする。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "When hit by an attack, the Pokémon creates a sandstorm."
         default:
             name(locale: locale)

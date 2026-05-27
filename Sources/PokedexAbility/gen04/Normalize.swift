@@ -39,9 +39,9 @@ enum Normalize: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "自分の技がノーマルタイプになる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "The Pokémon's moves become Normal type."
         default:
             name(locale: locale)

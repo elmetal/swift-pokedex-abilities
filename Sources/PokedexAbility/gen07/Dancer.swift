@@ -39,9 +39,9 @@ enum Dancer: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "他のポケモンが踊りの技を使うと、続けて同じ技を出す。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "When another Pokémon uses a dance move, the Pokémon immediately copies it."
         default:
             name(locale: locale)

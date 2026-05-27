@@ -39,9 +39,9 @@ enum PrimordialSea: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "ほのおタイプの攻撃技を無効化する強い雨にする。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "Creates heavy rain that nullifies Fire-type attacks."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum Sturdy: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "一撃必殺技を受けない。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "One-hit KO moves have no effect on the Pokémon."
         default:
             name(locale: locale)

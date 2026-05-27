@@ -39,9 +39,9 @@ enum Pressure: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "自分を対象にした相手の技のPP消費が2になる。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "Moves targeting the Pokémon use 2 PP instead of 1."
         default:
             name(locale: locale)

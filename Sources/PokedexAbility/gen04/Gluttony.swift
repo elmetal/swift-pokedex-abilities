@@ -39,9 +39,9 @@ enum Gluttony: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "HPが1/4以下で使うきのみを、HPが1/2以下で使う。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "Berries normally eaten at 1/4 HP or less are eaten at 1/2 HP or less instead."
         default:
             name(locale: locale)

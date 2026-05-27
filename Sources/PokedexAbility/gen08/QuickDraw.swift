@@ -39,9 +39,9 @@ enum QuickDraw: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "同じ優先度の中で先に行動することがある。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "The Pokémon sometimes moves first within its priority bracket."
         default:
             name(locale: locale)

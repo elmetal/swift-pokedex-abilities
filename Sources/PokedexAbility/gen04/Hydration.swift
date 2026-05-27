@@ -39,9 +39,9 @@ enum Hydration: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "雨の時、毎ターン終了時に状態異常が治る。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "At the end of each turn during rain, status conditions are healed."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum Justified: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "あくタイプの技を受けた時、こうげきが1段階上がる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "When hit by a Dark-type move, Attack rises by one stage."
         default:
             name(locale: locale)

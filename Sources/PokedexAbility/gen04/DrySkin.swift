@@ -39,9 +39,9 @@ enum DrySkin: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "みずタイプの技で最大HPの1/4回復し、ほのおタイプの技で受けるダメージが1.25倍になる。雨で回復し、晴れでダメージを受ける。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "Water-type moves heal 1/4 maximum HP, Fire-type damage is 1.25x, rain restores HP, and harsh sunlight damages the Pokémon."
         default:
             name(locale: locale)

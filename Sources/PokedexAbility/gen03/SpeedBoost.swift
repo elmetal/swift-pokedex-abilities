@@ -39,9 +39,9 @@ enum SpeedBoost: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "毎ターン終了時、すばやさが1段階上がる。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "At the end of each turn, Speed rises by one stage."
         default:
             name(locale: locale)

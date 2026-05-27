@@ -39,9 +39,9 @@ enum DeltaStream: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "ひこうタイプの弱点をなくす強い風を吹かせる。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "Creates strong winds that remove weaknesses of Flying-type Pokémon."
         default:
             name(locale: locale)

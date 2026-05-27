@@ -39,9 +39,9 @@ enum ShieldDust: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "攻撃技の追加効果を受けない。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "Additional effects of damaging moves are blocked."
         default:
             name(locale: locale)

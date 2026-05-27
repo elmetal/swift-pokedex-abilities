@@ -39,9 +39,9 @@ enum PowerSpot: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "味方の技の威力が1.3倍になる。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "Allies' moves have 1.3x power."
         default:
             name(locale: locale)

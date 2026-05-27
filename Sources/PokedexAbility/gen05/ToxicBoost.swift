@@ -39,9 +39,9 @@ enum ToxicBoost: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "どく・もうどく状態の時、こうげきが1.5倍になる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "When poisoned, Attack is 1.5x."
         default:
             name(locale: locale)

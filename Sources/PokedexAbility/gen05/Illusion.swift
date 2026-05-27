@@ -39,9 +39,9 @@ enum Illusion: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "ダメージを受けるまで、手持ちの最後のひんしでないポケモンの姿で登場する。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "The Pokémon appears as the last conscious Pokémon in the party until it is damaged."
         default:
             name(locale: locale)

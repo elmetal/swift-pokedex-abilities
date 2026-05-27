@@ -39,9 +39,9 @@ enum GrassPelt: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "グラスフィールドの時、ぼうぎょが1.5倍になる。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "During Grassy Terrain, Defense is 1.5x."
         default:
             name(locale: locale)

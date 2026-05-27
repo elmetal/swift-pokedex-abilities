@@ -39,9 +39,9 @@ enum Multitype: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "持っているプレートに応じてタイプが変わる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "The Pokémon's type changes according to the Plate it holds."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum Schooling: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "ヨワシのレベルと残りHPに応じて姿が変わる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "Wishiwashi changes form depending on its level and remaining HP."
         default:
             name(locale: locale)

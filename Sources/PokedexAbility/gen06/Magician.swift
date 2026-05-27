@@ -39,9 +39,9 @@ enum Magician: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "技を当てた時、相手の持ち物を奪う。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "When the Pokémon hits a target with a move, it steals the target's held item."
         default:
             name(locale: locale)

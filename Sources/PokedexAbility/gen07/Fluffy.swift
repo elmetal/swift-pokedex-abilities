@@ -39,9 +39,9 @@ enum Fluffy: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "直接攻撃で受けるダメージが半分になるが、ほのおタイプの技で受けるダメージが2倍になる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "Contact move damage is halved, but Fire-type move damage is doubled."
         default:
             name(locale: locale)

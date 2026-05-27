@@ -39,9 +39,9 @@ enum RainDish: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "雨の時、毎ターン終了時に最大HPの1/16回復する。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "During rain, 1/16 of maximum HP is restored at the end of each turn."
         default:
             name(locale: locale)

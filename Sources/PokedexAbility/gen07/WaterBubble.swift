@@ -39,9 +39,9 @@ enum WaterBubble: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "ほのおタイプの技で受けるダメージが半分になり、やけどにならず、みずタイプの技の威力が2倍になる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "Fire-type damage is halved, burn is prevented, and Water-type moves have 2x power."
         default:
             name(locale: locale)

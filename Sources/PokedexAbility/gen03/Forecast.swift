@@ -39,9 +39,9 @@ enum Forecast: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "天気に応じてポワルンの姿とタイプが変わる。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "Castform changes form and type according to the weather."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum Gooey: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "直接攻撃を受けた時、相手のすばやさを1段階下げる。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "Contact with the Pokémon lowers the attacker's Speed by one stage."
         default:
             name(locale: locale)

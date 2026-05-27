@@ -39,9 +39,9 @@ enum Stall: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "同じ優先度の中で必ず後に行動する。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "The Pokémon moves last within its priority bracket."
         default:
             name(locale: locale)

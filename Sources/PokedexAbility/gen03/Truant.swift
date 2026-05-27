@@ -39,9 +39,9 @@ enum Truant: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "2ターンに1回しか行動できない。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "The Pokémon can act only every other turn."
         default:
             name(locale: locale)

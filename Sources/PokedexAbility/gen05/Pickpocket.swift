@@ -39,9 +39,9 @@ enum Pickpocket: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "直接攻撃を受けた時、自分が道具を持っていなければ相手の持ち物を奪う。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "When hit by a contact move, the Pokémon steals the attacker's held item if it has none."
         default:
             name(locale: locale)

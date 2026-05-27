@@ -39,9 +39,9 @@ enum Technician: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "威力60以下の技の威力が1.5倍になる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "Moves with 60 power or less have 1.5x power."
         default:
             name(locale: locale)

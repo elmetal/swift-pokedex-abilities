@@ -39,9 +39,9 @@ enum ShedSkin: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "毎ターン終了時、1/3の確率で状態異常が治る。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "At the end of each turn, there is a 1/3 chance to heal a status condition."
         default:
             name(locale: locale)

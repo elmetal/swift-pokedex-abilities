@@ -39,9 +39,9 @@ enum SapSipper: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "くさタイプの技を受けると、ダメージを受けずこうげきが1段階上がる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "Grass-type moves deal no damage and raise Attack by one stage."
         default:
             name(locale: locale)

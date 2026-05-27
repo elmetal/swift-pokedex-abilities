@@ -39,9 +39,9 @@ enum Battery: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "味方の特殊技の威力が1.3倍になる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "Allies' special moves have 1.3x power."
         default:
             name(locale: locale)

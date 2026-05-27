@@ -39,9 +39,9 @@ enum InnardsOut: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "攻撃でひんし状態にされた時、最後に減ったHP分のダメージを相手に与える。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "When the Pokémon is knocked out by an attack, the attacker takes damage equal to the HP lost."
         default:
             name(locale: locale)

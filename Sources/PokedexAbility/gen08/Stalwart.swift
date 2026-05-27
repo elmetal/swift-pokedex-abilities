@@ -39,9 +39,9 @@ enum Stalwart: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "技を引き寄せる効果を無視して攻撃できる。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "The Pokémon's moves ignore effects that redirect moves."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum MotorDrive: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "でんきタイプの技を受けると、ダメージを受けずすばやさが1段階上がる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "Electric-type moves deal no damage and raise Speed by one stage."
         default:
             name(locale: locale)

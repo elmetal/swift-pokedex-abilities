@@ -39,9 +39,9 @@ enum CuteCharm: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "異性から直接攻撃を受けた時、30%の確率で相手をメロメロ状態にする。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "Contact has a 30% chance to infatuate an attacker of the opposite gender."
         default:
             name(locale: locale)

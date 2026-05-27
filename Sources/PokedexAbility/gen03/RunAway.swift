@@ -39,9 +39,9 @@ enum RunAway: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "野生ポケモンとの戦闘から必ず逃げられる。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "The Pokémon can always flee from wild battles."
         default:
             name(locale: locale)

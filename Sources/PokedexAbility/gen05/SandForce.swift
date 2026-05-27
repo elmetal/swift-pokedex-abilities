@@ -39,9 +39,9 @@ enum SandForce: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "すなあらしの時、いわ・じめん・はがねタイプの技の威力が1.3倍になり、すなあらしのダメージを受けない。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "During a sandstorm, Rock-, Ground-, and Steel-type moves have 1.3x power, and sandstorm damage is prevented."
         default:
             name(locale: locale)

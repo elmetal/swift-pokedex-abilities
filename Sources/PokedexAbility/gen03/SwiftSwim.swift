@@ -39,9 +39,9 @@ enum SwiftSwim: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "雨の時、すばやさが2倍になる。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "During rain, Speed is doubled."
         default:
             name(locale: locale)

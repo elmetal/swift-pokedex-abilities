@@ -39,9 +39,9 @@ enum PowerConstruct: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "ターン終了時、ジガルデのHPが半分以下ならパーフェクトフォルムになる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "At the end of a turn, Zygarde changes to Complete Forme if its HP is half or less."
         default:
             name(locale: locale)

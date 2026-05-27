@@ -39,9 +39,9 @@ enum Swarm: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "HPが1/3以下の時、むしタイプの攻撃技の威力が1.5倍になる。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "When HP is 1/3 or less, Bug-type attack moves have 1.5x power."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum WaterVeil: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "やけど状態にならない。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "The Pokémon cannot become burned."
         default:
             name(locale: locale)

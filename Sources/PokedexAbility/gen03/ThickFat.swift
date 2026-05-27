@@ -39,9 +39,9 @@ enum ThickFat: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "ほのお・こおりタイプの技で受けるダメージが半分になる。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "Damage from Fire- and Ice-type moves is halved."
         default:
             name(locale: locale)

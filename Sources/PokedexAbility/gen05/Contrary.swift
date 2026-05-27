@@ -39,9 +39,9 @@ enum Contrary: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "能力ランクの変化が逆になる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "Stat changes are reversed."
         default:
             name(locale: locale)

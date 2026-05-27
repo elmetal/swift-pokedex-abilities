@@ -39,9 +39,9 @@ enum Moxie: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "相手を倒した時、こうげきが1段階上がる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "When the Pokémon knocks out another Pokémon, Attack rises by one stage."
         default:
             name(locale: locale)

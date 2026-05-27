@@ -39,9 +39,9 @@ enum GorillaTactics: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "こうげきが1.5倍になるが、最初に選んだ技しか出せなくなる。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "Attack is 1.5x, but the Pokémon can use only the first move it selected."
         default:
             name(locale: locale)

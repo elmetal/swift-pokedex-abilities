@@ -39,9 +39,9 @@ enum SoulHeart: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "他のポケモンが倒れると、とくこうが1段階上がる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "When another Pokémon faints, Special Attack rises by one stage."
         default:
             name(locale: locale)

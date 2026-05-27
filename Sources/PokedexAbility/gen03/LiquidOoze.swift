@@ -39,9 +39,9 @@ enum LiquidOoze: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "HPを吸収する技を受けた時、相手は回復せず、その分のダメージを受ける。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "HP-draining moves damage the user instead of healing it."
         default:
             name(locale: locale)

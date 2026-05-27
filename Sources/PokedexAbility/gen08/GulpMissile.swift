@@ -39,9 +39,9 @@ enum GulpMissile: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "なみのりかダイビングを使うと獲物をくわえ、ダメージを受けた時に反撃する。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "After using Surf or Dive, Cramorant catches prey and counterattacks when damaged."
         default:
             name(locale: locale)

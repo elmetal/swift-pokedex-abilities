@@ -39,9 +39,9 @@ enum Aftermath: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "直接攻撃でひんし状態にされた時、相手に相手の最大HPの1/4のダメージを与える。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "If contact from another Pokémon knocks this Pokémon out, the attacker loses 1/4 of its maximum HP."
         default:
             name(locale: locale)

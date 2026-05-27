@@ -39,9 +39,9 @@ enum Frisk: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "登場した時、相手の持ち物を見通す。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "When the Pokémon enters battle, it reveals an opposing Pokémon's held item."
         default:
             name(locale: locale)

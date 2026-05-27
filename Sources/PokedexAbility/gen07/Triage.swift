@@ -39,9 +39,9 @@ enum Triage: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "回復技の優先度が3上がる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "Healing moves have their priority increased by three."
         default:
             name(locale: locale)

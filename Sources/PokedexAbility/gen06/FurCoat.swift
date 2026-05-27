@@ -39,9 +39,9 @@ enum FurCoat: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "物理技で受けるダメージが半分になる。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "Damage from physical moves is halved."
         default:
             name(locale: locale)

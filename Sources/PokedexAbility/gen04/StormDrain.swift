@@ -39,9 +39,9 @@ enum StormDrain: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "ダブルバトルで、単体を対象にするみずタイプの技を自分に引き寄せる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "In Double Battles, single-target Water-type moves are redirected to the Pokémon."
         default:
             name(locale: locale)

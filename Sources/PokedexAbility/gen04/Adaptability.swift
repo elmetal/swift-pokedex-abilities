@@ -39,9 +39,9 @@ enum Adaptability: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "タイプ一致の攻撃技の威力補正が1.5倍から2倍になる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "Same-type attack bonus becomes 2x instead of 1.5x."
         default:
             name(locale: locale)

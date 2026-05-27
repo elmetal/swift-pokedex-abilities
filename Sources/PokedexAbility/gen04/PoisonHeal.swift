@@ -39,9 +39,9 @@ enum PoisonHeal: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "どく・もうどく状態の時、どくのダメージを受けず毎ターン最大HPの1/8回復する。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "If poisoned, the Pokémon restores 1/8 of its maximum HP instead of taking poison damage."
         default:
             name(locale: locale)

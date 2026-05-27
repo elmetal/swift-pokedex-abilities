@@ -39,9 +39,9 @@ enum OwnTempo: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "こんらん状態にならない。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "The Pokémon cannot become confused."
         default:
             name(locale: locale)

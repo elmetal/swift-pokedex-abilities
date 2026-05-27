@@ -39,9 +39,9 @@ enum SlushRush: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "あられの時、すばやさが2倍になる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "During hail, Speed is doubled."
         default:
             name(locale: locale)

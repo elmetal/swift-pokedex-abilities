@@ -39,9 +39,9 @@ enum Simple: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "能力ランクの変化量が2倍になる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "Stat changes are doubled."
         default:
             name(locale: locale)

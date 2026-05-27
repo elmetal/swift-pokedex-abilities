@@ -39,9 +39,9 @@ enum Intimidate: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "登場した時、相手のこうげきを1段階下げる。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "When the Pokémon enters battle, opposing Pokémon's Attack falls by one stage."
         default:
             name(locale: locale)

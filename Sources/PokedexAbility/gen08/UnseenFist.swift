@@ -39,9 +39,9 @@ enum UnseenFist: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.viii, .japanese):
+        case (.viii ... .ix, .japanese):
             "直接攻撃の技が相手の守る効果を貫通する。"
-        case (.viii, _):
+        case (.viii ... .ix, _):
             "Contact moves can hit through protection moves."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum LiquidVoice: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "音に関係する技がみずタイプになる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "The Pokémon's sound-based moves become Water-type moves."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum WaterAbsorb: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "みずタイプの技を受けると、ダメージを受けず最大HPの1/4回復する。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "Water-type moves heal 1/4 of maximum HP instead of dealing damage."
         default:
             name(locale: locale)

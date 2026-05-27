@@ -39,9 +39,9 @@ enum SuperLuck: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "自分の技が急所に当たりやすくなる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "The Pokémon's moves have one higher critical-hit stage."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum ZenMode: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "ターン終了時、ヒヒダルマのHPが半分以下なら姿が変わる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "At the end of a turn, Darmanitan changes form if its HP is half or less."
         default:
             name(locale: locale)

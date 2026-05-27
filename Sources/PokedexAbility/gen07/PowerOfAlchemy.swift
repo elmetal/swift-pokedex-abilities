@@ -39,9 +39,9 @@ enum PowerOfAlchemy: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "味方が倒された時、その味方の特性を受け継ぐ。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "When an ally is knocked out, the Pokémon copies that ally's Ability."
         default:
             name(locale: locale)

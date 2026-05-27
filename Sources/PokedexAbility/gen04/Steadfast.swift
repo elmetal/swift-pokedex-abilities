@@ -39,9 +39,9 @@ enum Steadfast: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "ひるむと、すばやさが1段階上がる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "When the Pokémon flinches, Speed rises by one stage."
         default:
             name(locale: locale)

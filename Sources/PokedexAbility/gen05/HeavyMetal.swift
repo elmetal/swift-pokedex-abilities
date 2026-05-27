@@ -39,9 +39,9 @@ enum HeavyMetal: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "自分の重さが2倍になる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "The Pokémon's weight is doubled."
         default:
             name(locale: locale)

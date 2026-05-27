@@ -39,9 +39,9 @@ enum Damp: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "じばく・だいばくはつを使えなくする。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "Prevents Self-Destruct and Explosion from being used."
         default:
             name(locale: locale)

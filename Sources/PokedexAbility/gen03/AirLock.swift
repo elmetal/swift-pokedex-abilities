@@ -39,9 +39,9 @@ enum AirLock: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "場にいる間、天気の効果をなくす。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "All effects of weather are negated while the Pokémon is in battle."
         default:
             name(locale: locale)

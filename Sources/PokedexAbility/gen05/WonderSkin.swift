@@ -39,9 +39,9 @@ enum WonderSkin: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "自分に使われる変化技の命中率が50%になる。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "Status moves used against the Pokémon have 50% accuracy."
         default:
             name(locale: locale)

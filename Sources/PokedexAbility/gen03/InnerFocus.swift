@@ -39,9 +39,9 @@ enum InnerFocus: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "ひるまない。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "The Pokémon does not flinch."
         default:
             name(locale: locale)

@@ -39,9 +39,9 @@ enum EmergencyExit: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "HPが半分以下になると交代する。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "When HP drops to half or less, the Pokémon switches out."
         default:
             name(locale: locale)

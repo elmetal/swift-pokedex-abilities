@@ -39,9 +39,9 @@ enum BigPecks: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.v, .japanese):
+        case (.v ... .ix, .japanese):
             "相手にぼうぎょを下げられない。"
-        case (.v, _):
+        case (.v ... .ix, _):
             "Prevents other Pokémon from lowering the Pokémon's Defense."
         default:
             name(locale: locale)

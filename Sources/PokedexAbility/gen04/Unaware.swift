@@ -39,9 +39,9 @@ enum Unaware: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "攻撃したり攻撃を受けたりする時、相手の能力ランクの変化を無視する。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "When attacking or being attacked, the opposing Pokémon's stat changes are ignored."
         default:
             name(locale: locale)

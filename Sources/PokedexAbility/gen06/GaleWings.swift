@@ -39,9 +39,9 @@ enum GaleWings: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "ひこうタイプの技の優先度が1上がる。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "Flying-type moves have their priority increased by one."
         default:
             name(locale: locale)

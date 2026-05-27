@@ -39,9 +39,9 @@ enum NaturalCure: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iii, .japanese):
+        case (.iii ... .ix, .japanese):
             "交代すると状態異常が治る。"
-        case (.iii, _):
+        case (.iii ... .ix, _):
             "Status conditions are healed when the Pokémon switches out."
         default:
             name(locale: locale)

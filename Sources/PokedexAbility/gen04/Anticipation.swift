@@ -39,9 +39,9 @@ enum Anticipation: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "登場した時、相手が危険な技を持っていると身震いする。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "When the Pokémon enters battle, it shudders if an opposing Pokémon has a dangerous move."
         default:
             name(locale: locale)

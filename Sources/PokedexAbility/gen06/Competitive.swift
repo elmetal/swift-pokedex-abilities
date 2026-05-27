@@ -39,9 +39,9 @@ enum Competitive: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vi, .japanese):
+        case (.vi ... .ix, .japanese):
             "相手に能力を下げられた時、とくこうが2段階上がる。"
-        case (.vi, _):
+        case (.vi ... .ix, _):
             "When another Pokémon lowers one of this Pokémon's stats, Special Attack rises by two stages."
         default:
             name(locale: locale)

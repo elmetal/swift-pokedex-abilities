@@ -39,9 +39,9 @@ enum Reckless: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.iv, .japanese):
+        case (.iv ... .ix, .japanese):
             "反動でダメージを受ける技や外すとダメージを受ける技の威力が1.2倍になる。"
-        case (.iv, _):
+        case (.iv ... .ix, _):
             "Moves with recoil or crash damage have 1.2x power."
         default:
             name(locale: locale)

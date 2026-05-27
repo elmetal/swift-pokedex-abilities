@@ -39,9 +39,9 @@ enum BeastBoost: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "相手を倒した時、自分の最も高い能力が1段階上がる。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "When the Pokémon knocks out another Pokémon, its highest stat rises by one stage."
         default:
             name(locale: locale)

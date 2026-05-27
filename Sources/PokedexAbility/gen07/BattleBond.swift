@@ -39,9 +39,9 @@ enum BattleBond: PokemonAbilityDefinition {
 
     static func effectDescription(generation: PokemonGeneration, locale: Locale) -> String {
         switch (generation, locale.language.languageCode) {
-        case (.vii, .japanese):
+        case (.vii ... .ix, .japanese):
             "相手を倒すと、ゲッコウガがサトシゲッコウガに変化する。"
-        case (.vii, _):
+        case (.vii ... .ix, _):
             "After knocking out a Pokémon, Greninja becomes Ash-Greninja."
         default:
             name(locale: locale)
