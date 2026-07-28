@@ -3,7 +3,7 @@ import Testing
 @testable import PokedexAbility
 
 @Test func includesGenerationIIIThroughIXAndChampionsAbilityDefinitions() {
-    #expect(PokemonAbilityDefinitions.all.count == 310)
+    #expect(PokemonAbilityDefinitions.all.count == 312)
 }
 
 @Test func formatsGenerationIIIAbilityNames() {
@@ -121,6 +121,8 @@ import Testing
     let locale = Locale(identifier: "ja_JP")
 
     #expect(PokemonAbility.dragonize.formatted(locale: locale) == "ドラゴンスキン")
+    #expect(PokemonAbility.eelevate.formatted(locale: locale) == "うなぎのぼり")
+    #expect(PokemonAbility.fireMane.formatted(locale: locale) == "ほのおのたてがみ")
     #expect(PokemonAbility.megaSol.formatted(locale: locale) == "メガソーラー")
     #expect(PokemonAbility.spicySpray.formatted(locale: locale) == "とびだすハバネロ")
 }
@@ -129,6 +131,8 @@ import Testing
     let strategy = PokemonAbility.ParseStrategy(locale: Locale(identifier: "ja_JP"))
 
     #expect(try strategy.parse("ドラゴンスキン") == .dragonize)
+    #expect(try strategy.parse("うなぎのぼり") == .eelevate)
+    #expect(try strategy.parse("ほのおのたてがみ") == .fireMane)
     #expect(try strategy.parse("メガソーラー") == .megaSol)
     #expect(try strategy.parse("spicy-spray") == .spicySpray)
 }
