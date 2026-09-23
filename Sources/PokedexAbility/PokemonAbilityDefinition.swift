@@ -294,6 +294,7 @@ enum PokemonAbilityDefinitions {
         WanderingSpirit.self,
         AngerShell.self,
         ArmorTail.self,
+        AuraGuard.self,
         BeadsOfRuin.self,
         Commander.self,
         Costar.self,
